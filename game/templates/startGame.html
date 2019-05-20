@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
@@ -6,7 +7,7 @@
 
 <style> 
 html { 
-  background: url(backgroundimage.png) no-repeat center fixed; 
+  background: url({% static "images/backgroundimage.png" %}) no-repeat center fixed; 
   background-size: cover;
 }
 
@@ -89,7 +90,7 @@ body {
 <a href="gameIntroduction.html"><button class="bluebutton button1">遊戲說明</button></a>
 <a href="teamIntroduction.html"><button class="bluebutton button2">創辦團隊</button></a>  
 <a href="selectCharactor.html"><button class="redbutton startbutton">進入<br>遊戲</button></a>
-<img src="title.png">
+<img src="{% static 'images/title.png' %}">
 </body>
 
 </html>
