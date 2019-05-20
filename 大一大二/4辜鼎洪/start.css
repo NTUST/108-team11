@@ -27,7 +27,7 @@ body{
 .circular--square {
   border-radius: 50%;
   border:5px white solid;
-  content:url("辜鼎洪.png");
+  content:url("leo.png");
   width:100px;
   height:100px;
 }

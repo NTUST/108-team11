@@ -1,12 +1,10 @@
-html{
-  height:100%;
-}
+
 body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    min-height: 100%;
+    min-height: 100%; min-width: 100%;
 }
 .name{
     width:300px;
@@ -41,14 +39,15 @@ body{
 div.name{
 	width:300px;
 	margin: auto;
-    padding: 5px;
-  	float:left;
+  padding: 5px;
+  float:left;
 }
 .dropbtn {
   background-color:  rgba(225,225,225,0.9);
   color: black;
+  margin-right:5px;
   padding: 13px;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
 }
@@ -59,9 +58,10 @@ div.name{
 }
 
 .dropdown-content {
+  margin-right:5px;
   display: none;
   position: absolute;
-  right: 0;
+  right: 3px;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -89,15 +89,14 @@ div.name{
   color: white;
 }
 .foot {
-    padding: 40px; 
+    padding: 10px;
     background-color: rgba(225,225,225,0.9);
     position: absolute;
-    left:50px;
-    bottom: 50px;
-    height: 160px;
+    float:center;
+    bottom: 8px;
     width: 90%;
-    float:right; 
-    border-radius: 20px;
+    margin-left:2.5%;
+    border-radius:20px;
     font-size:30px;
 }
 
@@ -105,11 +104,10 @@ div.name{
     padding: 40px; 
     background-color: rgba(225,225,225,0.9);
     position: absolute;
-    left:50px;
-    bottom: 50px;
-    height: 80px;
+    bottom:8px;
     width: 90%;
-    float:right; 
+    margin-left:2.5%;
+    float:center; 
     border-radius: 20px;
     font-size:30px;
 }
@@ -118,7 +116,7 @@ div.name{
   background-color: rgba(225,225,225,0);
   color:black;
   height: 55px;
-  width: 500px;
+  width: 450px;
   text-align: center;
   font-size: 32px;
   margin: 4px 2px;
@@ -133,9 +131,6 @@ div.name{
 
 .next{
   position:absolute;
-  right:5px;
-  bottom:5px; 
-}
-.next:hover{
-  background: url(karen.png);
+  right:1%;
+  bottom:1%; 
 }

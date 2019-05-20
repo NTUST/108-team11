@@ -27,7 +27,7 @@ body{
 .circular--square {
   border-radius: 50%;
   border:5px white solid;
-  content:url("邱可人.png");
+  content:url("karen.png");
   width:100px;
   height:100px;
 }
