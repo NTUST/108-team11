@@ -14,21 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf.urls import include, url
-from django.contrib import admin
-from mysite.views import *
-
-
-import mysite.views
+from . import views
+from mysite.views import homePage
 
 urlpatterns = [
     url(r'^$', homePage),
-    url(r'^admin/', admin.site.urls),
-    url(r'', selectCharactor),
-    url(r'', gameIntroduction),
-    url(r'', teamIntroduction),
-    url(r'', settings1),
-    url(r'', settings2),
-    url(r'', settings3),
-    url(r'', settings4),
-
+    url(r'^selectCharactor/', views.selectCharactor, name="selectCharactor"),
 ]
