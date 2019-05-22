@@ -1,9 +1,9 @@
-{% load staticfiles %}
+{% load staticfiles%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>CSS Template</title>
-<meta charset="utf-8">
+<meta charset="zh-Hant">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -37,6 +37,12 @@ article {
   background-color: #f1f1f1;
   padding: 100px;
   text-align: center;
+  height: 700px;
+}
+
+div {
+  position: absolute;
+  bottom: 5%;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -71,17 +77,19 @@ img:hover {
 <body>
 
 <header>
-  <a href="startGame.html"><img id="BACK_TO_HOME" src="http://www5.ndmctsgh.edu.tw/gh/images/home.png"></a>
+  <a href="startGame"><img id="BACK_TO_HOME" src="http://www5.ndmctsgh.edu.tw/gh/images/home.png"></a>
   <h2>請選擇角色</h2>
 </header>
 
 <section>
   
   <article>
-	  <a href="settings1.html"><img src="{% static 'images/emico_1.png' %}" width="300" height="560"></a>
-    <a href="settings2.html"><img src="{% static 'images/karen_1.png' %}" width="300" height="550"></a>
-    <a href="settings3.html"><img src="{% static 'images/timmy_1.png' %}" width="310" height="560"></a>
-    <a href="settings4.html"><img src="{% static 'images/leo_1.png' %}" width="290" height="550"></a>
+    <div>
+	  <a href="{% url 'settings1' %}"><img src="{% static 'images/emico_2.png' %}" width="280" height="630"></a>
+    <a href="{% url 'settings2' %}"><img src="{% static 'images/karen_1.png' %}" width="300" height="610"></a>
+    <a href="{% url 'settings3' %}"><img src="{% static 'images/timmy_new.png' %}" width="335" height="680"></a>
+    <a href="{% url 'settings4' %}"><img src="{% static 'images/leo_1.png' %}" width="285" height="640"></a>
+  </div>
   </article>
 </section>
 

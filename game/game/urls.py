@@ -14,21 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf.urls import include, url
+from django.urls import path
 from django.contrib import admin
 from mysite.views import *
+from mysite import views
 
 
 import mysite.views
 
 urlpatterns = [
     url(r'^$', homePage),
+    url(r'^startGame/', startGame, name="startGame"),
     url(r'^admin/', admin.site.urls),
-    url(r'', selectCharactor),
-    url(r'', gameIntroduction),
-    url(r'', teamIntroduction),
-    url(r'', settings1),
-    url(r'', settings2),
-    url(r'', settings3),
-    url(r'', settings4),
+    url(r'^selectCharactor/', selectCharactor, name="selectCharactor"),
+    url(r'^gameIntroduction/', gameIntroduction, name="gameIntroduction"),
+    url(r'^teamIntroduction/', teamIntroduction, name="teamIntroduction"),
+    url(r'^selectCharactor/settings1/', settings1, name="settings1"),
+    url(r'^selectCharactor/settings2/', settings2, name="settings2"),
+    url(r'^selectCharactor/settings3/', settings3, name="settings3"),
+    url(r'^selectCharactor/settings4/', settings4, name="settings4"),
 
 ]
