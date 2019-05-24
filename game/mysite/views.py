@@ -38,7 +38,7 @@ def settings3(request):
 def settings4(request):
 	return render(request, 'login/settings4.html')
 
-#first and second grade for emico
+#emico 1-2
 
 def start(request):
 	return render(request, '1-2/emico/1start.html')
@@ -259,4 +259,98 @@ def summerVacation203(request):
 def summerVacation204(request):
 	return render(request, '1-2/emico/44-4summerVacation2-4.html')
 
-#first and second grade for karen
+#emico 3-4
+
+def rdGrade(request):
+	return render(request, '3-4/emico/45_3rdGrade.html')
+
+def rdGradeOp(request):
+	return render(request, '3-4/emico/46_3rdGradeOp.html')
+
+def exchangeOp(request):
+	return render(request, '3-4/emico/47_exchangeOp.html')
+
+def countriesOp(request):
+	return render(request, '3-4/emico/47-1_countriesOp.html')
+
+def USA(request):
+	return render(request, '3-4/emico/47-1-1_USA.html')
+
+def Australia(request):
+	return render(request, '3-4/emico/47-1-2_Australia.html')
+
+def Germany(request):
+	return render(request, '3-4/emico/47-1-3_Germany.html')
+
+def France(request):
+	return render(request, '3-4/emico/47-1-4_France.html')
+
+def exchangeN(request):
+	return render(request, '3-4/emico/47-2_exchangeN.html')
+
+def exchangeY(request):
+	return render(request, '3-4/emico/48_exchangeY.html')
+
+def volleyballCaptonOp(request):
+	return render(request, '3-4/emico/49_volleyballCaptonOp.html')
+
+def captonY(request):
+	return render(request, '3-4/emico/49-1_captonY.html')
+
+def captonN(request):
+	return render(request, '3-4/emico/49-2_captonN.html')
+
+def summerVacation3Op(request):
+	return render(request, '3-4/emico/50_summerVacation3Op.html')
+
+def summerVacation31(request):
+	return render(request, '3-4/emico/50-1_summerVacation3.html')
+
+def summerVacation32(request):
+	return render(request, '3-4/emico/50-2_summerVacation3.html')
+
+def summerVacation33(request):
+	return render(request, '3-4/emico/50-3_summerVacation3.html')
+
+def summerVacation34(request):
+	return render(request, '3-4/emico/50-4_summerVacation3.html')
+
+def senior(request):
+	return render(request, '3-4/emico/51_senior.html')
+
+def seniorOp(request):
+	return render(request, '3-4/emico/52_seniorOp.html')
+
+def internshipOp(request):
+	return render(request, '3-4/emico/52-1_internshipOp.html')
+
+def masterOp(request):
+	return render(request, '3-4/emico/52-2_masterOp.html')
+
+def takeExam(request):
+	return render(request, '3-4/emico/53_takeExam.html')
+
+def work(request):
+	return render(request, '3-4/emico/53_work.html')
+
+def finalExamOp(request):
+	return render(request, '3-4/emico/54_finalExamOp.html')
+
+def graduation(request):
+	return render(request, '3-4/emico/55_graduation.html')
+
+def finishGame(request):
+	return render(request, '3-4/emico/56_finishGame.html')
+
+def gameOver(request):
+	return render(request, 'end/gameOver.html')
+
+
+
+
+
+
+
+
+
+

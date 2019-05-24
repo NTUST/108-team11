@@ -112,5 +112,36 @@ urlpatterns = [
     url(r'^summerVacation203/', views.summerVacation203, name="summerVacation203"),
     url(r'^summerVacation204/', views.summerVacation204, name="summerVacation204"),
 
-    #url for karen in first and second grade
+    #url for emico in third and forth grade
+
+    url(r'^rdGrade/', views.rdGrade, name="rdGrade"),
+    url(r'^rdGradeOp/', views.rdGradeOp, name="rdGradeOp"),
+    url(r'^exchangeOp/', views.exchangeOp, name="exchangeOp"),
+    url(r'^countriesOp/', views.countriesOp, name="countriesOp"),
+    url(r'^USA/', views.USA, name="USA"),
+    url(r'^Australia/', views.Australia, name="Australia"),
+    url(r'^Germany/', views.Germany, name="Germany"),
+    url(r'^France/', views.France, name="France"),
+    url(r'^exchangeN/', views.exchangeN, name="exchangeN"),
+    url(r'^exchangeY/', views.exchangeY, name="exchangeY"),
+    url(r'^volleyballCaptonOp/', views.volleyballCaptonOp, name="volleyballCaptonOp"),
+    url(r'^captonY/', views.captonY, name="captonY"),
+    url(r'^captonN/', views.captonN, name="captonN"),
+    url(r'^summerVacation3Op/', views.summerVacation3Op, name="summerVacation3Op"),
+    url(r'^summerVacation31/', views.summerVacation31, name="summerVacation31"),
+    url(r'^summerVacation32/', views.summerVacation32, name="summerVacation32"),
+    url(r'^summerVacation33/', views.summerVacation33, name="summerVacation33"),
+    url(r'^summerVacation34/', views.summerVacation34, name="summerVacation34"),
+    url(r'^senior/', views.senior, name="senior"),
+    url(r'^seniorOp/', views.seniorOp, name="seniorOp"),
+    url(r'^internshipOp/', views.internshipOp, name="internshipOp"),
+    url(r'^masterOp/', views.masterOp, name="masterOp"),
+    url(r'^takeExam/', views.takeExam, name="takeExam"),
+    url(r'^work/', views.work, name="work"),
+    url(r'^finalExamOp/', views.finalExamOp, name="finalExamOp"),
+    url(r'^graduation/', views.graduation, name="graduation"),
+    url(r'^finishGame/', views.finishGame, name="finishGame"),
+    url(r'^gameOver/', views.gameOver, name="gameOver"),
+
+    #
 ]
