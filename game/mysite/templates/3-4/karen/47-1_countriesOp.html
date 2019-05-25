@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/karen/start.css' %}">
+<html>
+<head>
+  <title>虛擬台科人</title>
+
+</head>
+<body  background="{% static 'images/karen/exchange.jpg' %}"> 
+<div class="id_wrapper">
+  <div class="name">
+    <div style="float:left;">
+    <img class="circular--square"/>
+    </div>
+    <div class="namefont">
+      </div>
+    </div>
+  <div class="dropdown" style="float:right;">
+      <button class="dropbtn" style="font-size: 15px;">選單</button>
+      <div class="dropdown-content">
+        <a href="#">儲存目前進度</a>
+        <a href="{% url 'startGame' %}">回主頁</a>
+      </div>
+  </div>
+  <div class="foot" style="float:right; border-radius: 20px;">
+    &nbsp &nbsp 好多姊妹校啊，要申請哪個國家好呢？<br>
+    <div style="text-align: center;">
+      <button class="button" onclick="location.href='{% url 'USAk' %}'"; >美國</button>
+      <button class="button" onclick="location.href='{% url 'Australiak' %}'";>澳洲</button><br>
+      <button class="button" onclick="location.href='{% url 'Germanyk' %}'";>德國</button>
+      <button class="button" onclick="location.href='{% url 'Francek' %}'";>法國</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
