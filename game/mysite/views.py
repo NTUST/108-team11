@@ -662,16 +662,309 @@ def finishGamek(request):
 
 
 
-#
+#timmy first and second grade
 
 def startt(request):
 	return render(request, '1-2/timmy/1start.html')
 
+def eatopt(request):
+	return render(request, '1-2/timmy/2eatop.html')
 
+def eatgoodt(request):
+	return render(request, '1-2/timmy/3-1eatgood.html')
 
+def eatgood2t(request):
+	return render(request, '1-2/timmy/3-2eatgood2.html')
 
+def eatgood3t(request):
+	return render(request, '1-2/timmy/3-3eatgood3.html')
 
+def eatnot(request):
+	return render(request, '1-2/timmy/3-4eatno.html')
 
+def class1t(request):
+	return render(request, '1-2/timmy/4class.html')
+
+def classopt(request):
+	return render(request, '1-2/timmy/5classop.html')
+
+def classbookt(request):
+	return render(request, '1-2/timmy/6-1classbook.html')
+
+def classvideot(request):
+	return render(request, '1-2/timmy/6-2classvideo.html')
+
+def classsleept(request):
+	return render(request, '1-2/timmy/6-3classsleep.html')
+
+def homet(request):
+	return render(request, '1-2/timmy/7home.html')
+
+def homeopt(request):
+	return render(request, '1-2/timmy/8homeop.html')
+
+def homeop101t(request):
+	return render(request, '1-2/timmy/9-1homeop1-1.html')
+
+def eatgood4t(request):
+	return render(request, '1-2/timmy/9-2-1eatgood4.html')
+
+def eatgood5t(request):
+	return render(request, '1-2/timmy/9-2-2eatgood5.html')
+
+def eatgood6t(request):
+	return render(request, '1-2/timmy/9-2-3eatgood6.html')
+
+def eatgood7t(request):
+	return render(request, '1-2/timmy/9-2-4eatgood7.html')
+
+def eatop2t(request):
+	return render(request, '1-2/timmy/9-2eatop2.html')
+
+def homeop103t(request):
+	return render(request, '1-2/timmy/9-3homeop1-3.html')
+
+def homeop104t(request):
+	return render(request, '1-2/timmy/9-4homeop1-4.html')
+
+def clubt(request):
+	return render(request, '1-2/timmy/10club.html')
+
+def club1t(request):
+	return render(request, '1-2/timmy/11-1club1.html')
+
+def club2t(request):
+	return render(request, '1-2/timmy/11-2club2.html')
+
+def club3t(request):
+	return render(request, '1-2/timmy/11-3club3.html')
+
+def lovert(request):
+	return render(request, '1-2/timmy/12lover.html')
+
+def loveropt(request):
+	return render(request, '1-2/timmy/13loverop.html')
+
+def loverlovet(request):
+	return render(request, '1-2/timmy/14-1-1loverlove.html')
+
+def loverlove2t(request):
+	return render(request, '1-2/timmy/14-1-2loverlove2.html')
+
+def loverlove3t(request):
+	return render(request, '1-2/timmy/14-1-3loverlove3.html')
+
+def lovertalkt(request):
+	return render(request, '1-2/timmy/14-2lovertalk.html')
+
+def campt(request):
+	return render(request, '1-2/timmy/15camp.html')
+
+def campgot(request):
+	return render(request, '1-2/timmy/16campgo.html')
+
+def midtermt(request):
+	return render(request, '1-2/timmy/17midterm.html')
+
+def midtermopt(request):
+	return render(request, '1-2/timmy/18midtermop.html')
+
+def promt(request):
+	return render(request, '1-2/timmy/19prom.html')
+
+def promgot(request):
+	return render(request, '1-2/timmy/20promgo.html')
+
+def finalt(request):
+	return render(request, '1-2/timmy/21final.html')
+
+def winterVacation1t(request):
+	return render(request, '1-2/timmy/22winterVacation1.html')
+
+def winterVacation101t(request):
+	return render(request, '1-2/timmy/23-1winterVacation1-1.html')
+
+def winterVacation102t(request):
+	return render(request, '1-2/timmy/23-2winterVacation1-2.html')
+
+def winterVacationEnd1t(request):
+	return render(request, '1-2/timmy/24winterVacationEnd1.html')
+
+def ktvt(request):
+	return render(request, '1-2/timmy/25ktv.html')
+
+def ktvgot(request):
+	return render(request, '1-2/timmy/26ktvgo.html')
+
+def secondDrop1t(request):
+	return render(request, '1-2/timmy/27secondDrop1.html')
+
+def secondDrop1okt(request):
+	return render(request, '1-2/timmy/28secondDrop1ok.html')
+
+def summerVacation1t(request):
+	return render(request, '1-2/timmy/29summerVacation1.html')
+
+def summerVacation101t(request):
+	return render(request, '1-2/timmy/30-1summerVacation1-1.html')
+
+def summerVacation102t(request):
+	return render(request, '1-2/timmy/30-2summerVacation1-2.html')
+
+def summerVacation103t(request):
+	return render(request, '1-2/timmy/30-3summerVacation1-3.html')
+
+def summerVacation104t(request):
+	return render(request, '1-2/timmy/30-4summerVacation1-4.html')
+
+def rentHouset(request):
+	return render(request, '1-2/timmy/31rentHouse.html')
+
+def sophomoreOpt(request):
+	return render(request, '1-2/timmy/32sophomoreOp.html')
+
+def sophomoreOp101t(request):
+	return render(request, '1-2/timmy/33-1sophomoreOp1-1.html')
+
+def sophomoreOp102t(request):
+	return render(request, '1-2/timmy/33-2sophomoreOp1-2.html')
+
+def sophomoreOp103t(request):
+	return render(request, '1-2/timmy/33-3sophomoreOp1-3.html')
+
+def sophomoreOp104t(request):
+	return render(request, '1-2/timmy/33-4sophomoreOp1-4.html')
+
+def lover2t(request):
+	return render(request, '1-2/timmy/34lover2.html')
+
+def loverop2t(request):
+	return render(request, '1-2/timmy/35loverop2.html')
+
+def loverokt(request):
+	return render(request, '1-2/timmy/36-1loverok.html')
+
+def loverEndt(request):
+	return render(request, '1-2/timmy/36-2loverEnd.html')
+
+def secondDrop2t(request):
+	return render(request, '1-2/timmy/37secondDrop2.html')
+
+def secondDrop2okt(request):
+	return render(request, '1-2/timmy/38secondDrop2ok.html')
+
+def winterVacation2t(request):
+	return render(request, '1-2/timmy/39winterVacation2.html')
+
+def winterVacation201t(request):
+	return render(request, '1-2/timmy/40-1winterVacation2-1.html')
+
+def winterVacation202t(request):
+	return render(request, '1-2/timmy/40-2winterVacation2-2.html')
+
+def sophomore2t(request):
+	return render(request, '1-2/timmy/41sophomore2.html')
+
+def finalExam2t(request):
+	return render(request, '1-2/timmy/42finalExam2.html')
+
+def summerVacation2t(request):
+	return render(request, '1-2/timmy/43summerVacation2.html')
+
+def summerVacation201t(request):
+	return render(request, '1-2/timmy/44-1summerVacation2-1.html')
+
+def summerVacation202t(request):
+	return render(request, '1-2/timmy/44-2summerVacation2-2.html')
+
+def summerVacation203t(request):
+	return render(request, '1-2/timmy/44-3summerVacation2-3.html')
+
+def summerVacation204t(request):
+	return render(request, '1-2/timmy/44-4summerVacation2-4.html')
+
+#timmy third and forth grade
+
+def rdGradet(request):
+	return render(request, '3-4/timmy/45_3rdGrade.html')
+
+def rdGradeOpt(request):
+	return render(request, '3-4/timmy/46_3rdGradeOp.html')
+
+def exchangeOpt(request):
+	return render(request, '3-4/timmy/47_exchangeOp.html')
+
+def countriesOpt(request):
+	return render(request, '3-4/timmy/47-1_countriesOp.html')
+
+def USAt(request):
+	return render(request, '3-4/timmy/47-1-1_USA.html')
+
+def Australiat(request):
+	return render(request, '3-4/timmy/47-1-2_Australia.html')
+
+def Germanyt(request):
+	return render(request, '3-4/timmy/47-1-3_Germany.html')
+
+def Francet(request):
+	return render(request, '3-4/timmy/47-1-4_France.html')
+
+def exchangeNt(request):
+	return render(request, '3-4/timmy/47-2_exchangeN.html')
+
+def exchangeYt(request):
+	return render(request, '3-4/timmy/48_exchangeY.html')
+
+def volleyballCaptonOpt(request):
+	return render(request, '3-4/timmy/49_volleyballCaptonOp.html')
+
+def captonYt(request):
+	return render(request, '3-4/timmy/49-1_captonY.html')
+
+def captonNt(request):
+	return render(request, '3-4/timmy/49-2_captonN.html')
+
+def summerVacation3Opt(request):
+	return render(request, '3-4/timmy/50_summerVacation3Op.html')
+
+def summerVacation31t(request):
+	return render(request, '3-4/timmy/50-1_summerVacation3.html')
+
+def summerVacation32t(request):
+	return render(request, '3-4/timmy/50-2_summerVacation3.html')
+
+def summerVacation33t(request):
+	return render(request, '3-4/timmy/50-3_summerVacation3.html')
+
+def summerVacation34t(request):
+	return render(request, '3-4/timmy/50-4_summerVacation3.html')
+
+def seniort(request):
+	return render(request, '3-4/timmy/51_senior.html')
+
+def seniorOpt(request):
+	return render(request, '3-4/timmy/52_seniorOp.html')
+
+def internshipOpt(request):
+	return render(request, '3-4/timmy/52-1_internshipOp.html')
+
+def masterOpt(request):
+	return render(request, '3-4/timmy/52-2_masterOp.html')
+
+def takeExamt(request):
+	return render(request, '3-4/timmy/53_takeExam.html')
+
+def workt(request):
+	return render(request, '3-4/timmy/53_work.html')
+
+def finalExamOpt(request):
+	return render(request, '3-4/timmy/54_finalExamOp.html')
+
+def graduationt(request):
+	return render(request, '3-4/timmy/55_graduation.html')
+
+def finishGamet(request):
+	return render(request, '3-4/timmy/56_finishGame.html')
 
 
 

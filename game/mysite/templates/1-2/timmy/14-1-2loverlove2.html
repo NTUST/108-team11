@@ -1,11 +1,12 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="start.css">
+<link rel="stylesheet" href="{% static 'css/timmy/start.css' %}">
 <html>
 <head>
   <title>我的台科物語</title>
 </head>
-<body background="愛情3.JPG">
+<body background="{% static 'images/timmy/愛情3.JPG' %}">
 <div id="id_wrapper">
   <div class="name">
     <div style="float:left;">
@@ -18,13 +19,13 @@
       <button class="dropbtn">選單</button>
       <div class="dropdown-content">
         <a href="#">儲存目前進度</a>
-        <a href="#">回主頁</a>
+        <a href="{% url 'startGame' %}">回主頁</a>
       </div>
   </div>
 
   <div class="foot2">
       <span id="demo">同學...不好意思你是不是認錯人了</span>
-      <img class="next"src="https://img.icons8.com/ios/50/000000/arrow.png" onclick="location.href='14-1-3loverlove3.html'";>  </footer>
+      <img class="next"src="https://img.icons8.com/ios/50/000000/arrow.png" onclick="location.href='{% url 'loverlove3t' %}'";>  </footer>
   </div>
 
 </body>

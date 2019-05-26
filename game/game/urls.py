@@ -224,7 +224,7 @@ urlpatterns = [
     url(r'^summerVacation203k/', views.summerVacation203k, name="summerVacation203k"),
     url(r'^summerVacation204k/', views.summerVacation204k, name="summerVacation204k"),
 
-    #url for emico in third and forth grade
+    #url for karen in third and forth grade
 
     url(r'^rdGradek/', views.rdGradek, name="rdGradek"),
     url(r'^rdGradeOpk/', views.rdGradeOpk, name="rdGradeOpk"),
@@ -257,7 +257,117 @@ urlpatterns = [
 
 
 
-    #
+
+    #url for timmy in first and second grade
 
     url(r'^startt/', views.startt, name="startt"),
-]
+    url(r'^eatopt/', views.eatopt, name="eatopt"),
+    url(r'^eatgoodt/', views.eatgoodt, name="eatgoodt"),
+    url(r'^eatgood2t/', views.eatgood2t, name="eatgood2t"),
+    url(r'^eatgood3t/', views.eatgood3t, name="eatgood3t"),
+    url(r'^eatnot/', views.eatnot, name="eatnot"),
+    url(r'^class1t/', views.class1t, name="class1t"),
+    url(r'^classopt/', views.classopt, name="classopt"),
+    url(r'^classbookt/', views.classbookt, name="classbookt"),
+    url(r'^classvideot/', views.classvideot, name="classvideot"),
+    url(r'^classsleept/', views.classsleept, name="classsleept"),
+    url(r'^homet/', views.homet, name="homet"),
+    url(r'^homeopt/', views.homeopt, name="homeopt"),
+    url(r'^homeop101t/', views.homeop101t, name="homeop101t"),
+    url(r'^eatgood4t/', views.eatgood4t, name="eatgood4t"),
+    url(r'^eatgood5t/', views.eatgood5t, name="eatgood5t"),
+    url(r'^eatgood6t/', views.eatgood6t, name="eatgood6t"),
+    url(r'^eatgood7t/', views.eatgood7t, name="eatgood7t"),
+    url(r'^eatop2t/', views.eatop2t, name="eatop2t"),
+    url(r'^homeop103t/', views.homeop103t, name="homeop103t"),
+    url(r'^homeop104t/', views.homeop104t, name="homeop104t"),
+    url(r'^clubt/', views.clubt, name="clubt"),
+    url(r'^club1t/', views.club1t, name="club1t"),
+    url(r'^club2t/', views.club2t, name="club2t"),
+    url(r'^club3t/', views.club3t, name="club3t"),
+    url(r'^lovert/', views.lovert, name="lovert"),
+    url(r'^loveropt/', views.loveropt, name="loveropt"),
+    url(r'^loverlovet/', views.loverlovet, name="loverlovet"),
+    url(r'^loverlove2t/', views.loverlove2t, name="loverlove2t"),
+    url(r'^loverlove3t/', views.loverlove3t, name="loverlove3t"),
+    url(r'^lovertalkt/', views.lovertalkt, name="lovertalkt"),
+    url(r'^campt/', views.campt, name="campt"),
+    url(r'^campgot/', views.campgot, name="campgot"),
+    url(r'^midtermt/', views.midtermt, name="midtermt"),
+    url(r'^midtermopt/', views.midtermopt, name="midtermopt"),
+    url(r'^promt/', views.promt, name="promt"),
+    url(r'^promgot/', views.promgot, name="promgot"),
+    url(r'^finalt/', views.finalt, name="finalt"),
+    url(r'^winterVacation1t/', views.winterVacation1t, name="winterVacation1t"),
+    url(r'^winterVacation101t/', views.winterVacation101t, name="winterVacation101t"),
+    url(r'^winterVacation102t/', views.winterVacation102t, name="winterVacation102t"),
+    url(r'^winterVacationEnd1t/', views.winterVacationEnd1t, name="winterVacationEnd1t"),
+    url(r'^ktvt/', views.ktvt, name="ktvt"),
+    url(r'^ktvgot/', views.ktvgot, name="ktvgot"),
+    url(r'^secondDrop1t/', views.secondDrop1t, name="secondDrop1t"),
+    url(r'^secondDrop1okt/', views.secondDrop1okt, name="secondDrop1okt"),
+    url(r'^summerVacation1t/', views.summerVacation1t, name="summerVacation1t"),
+    url(r'^summerVacation101t/', views.summerVacation101t, name="summerVacation101t"),
+    url(r'^summerVacation102t/', views.summerVacation102t, name="summerVacation102t"),
+    url(r'^summerVacation103t/', views.summerVacation103t, name="summerVacation103t"),
+    url(r'^summerVacation104t/', views.summerVacation104t, name="summerVacation104t"),
+    url(r'^rentHouset/', views.rentHouset, name="rentHouset"),
+    url(r'^sophomoreOpt/', views.sophomoreOpt, name="sophomoreOpt"),
+    url(r'^sophomoreOp101t/', views.sophomoreOp101t, name="sophomoreOp101t"),
+    url(r'^sophomoreOp102t/', views.sophomoreOp102t, name="sophomoreOp102t"),
+    url(r'^sophomoreOp103t/', views.sophomoreOp103t, name="sophomoreOp103t"),
+    url(r'^sophomoreOp104t/', views.sophomoreOp104t, name="sophomoreOp104t"),
+    url(r'^lover2t/', views.lover2t, name="lover2t"),
+    url(r'^loverop2t/', views.loverop2t, name="loverop2t"),
+    url(r'^loverokt/', views.loverokt, name="loverokt"),
+    url(r'^loverEndt/', views.loverEndt, name="loverEndt"),
+    url(r'^secondDrop2t/', views.secondDrop2t, name="secondDrop2t"),
+    url(r'^secondDrop2okt/', views.secondDrop2okt, name="secondDrop2okt"),
+    url(r'^winterVacation2t/', views.winterVacation2t, name="winterVacation2t"),
+    url(r'^winterVacation201t/', views.winterVacation201t, name="winterVacation201t"),
+    url(r'^winterVacation202t/', views.winterVacation202t, name="winterVacation202t"),
+    url(r'^sophomore2t/', views.sophomore2t, name="sophomore2t"),
+    url(r'^finalExam2t/', views.finalExam2t, name="finalExam2t"),
+    url(r'^summerVacation2t/', views.summerVacation2t, name="summerVacation2t"),
+    url(r'^summerVacation201t/', views.summerVacation201t, name="summerVacation201t"),
+    url(r'^summerVacation202t/', views.summerVacation202t, name="summerVacation202t"),
+    url(r'^summerVacation203t/', views.summerVacation203t, name="summerVacation203t"),
+    url(r'^summerVacation204t/', views.summerVacation204t, name="summerVacation204t"),
+
+    #url for timmy in third and forth grade
+
+    url(r'^rdGradet/', views.rdGradet, name="rdGradet"),
+    url(r'^rdGradeOpt/', views.rdGradeOpt, name="rdGradeOpt"),
+    url(r'^exchangeOpt/', views.exchangeOpt, name="exchangeOpt"),
+    url(r'^countriesOpt/', views.countriesOpt, name="countriesOpt"),
+    url(r'^USAt/', views.USAt, name="USAt"),
+    url(r'^Australiat/', views.Australiat, name="Australiat"),
+    url(r'^Germanyt/', views.Germanyt, name="Germanyt"),
+    url(r'^Francet/', views.Francet, name="Francet"),
+    url(r'^exchangeNt/', views.exchangeNt, name="exchangeNt"),
+    url(r'^exchangeYt/', views.exchangeYt, name="exchangeYt"),
+    url(r'^volleyballCaptonOpt/', views.volleyballCaptonOpt, name="volleyballCaptonOpt"),
+    url(r'^captonYt/', views.captonYt, name="captonYt"),
+    url(r'^captonNt/', views.captonNt, name="captonNt"),
+    url(r'^summerVacation3Opt/', views.summerVacation3Opt, name="summerVacation3Opt"),
+    url(r'^summerVacation31t/', views.summerVacation31t, name="summerVacation31t"),
+    url(r'^summerVacation32t/', views.summerVacation32t, name="summerVacation32t"),
+    url(r'^summerVacation33t/', views.summerVacation33t, name="summerVacation33t"),
+    url(r'^summerVacation34t/', views.summerVacation34t, name="summerVacation34t"),
+    url(r'^seniort/', views.seniort, name="seniort"),
+    url(r'^seniorOpt/', views.seniorOpt, name="seniorOpt"),
+    url(r'^internshipOpt/', views.internshipOpt, name="internshipOpt"),
+    url(r'^masterOpt/', views.masterOpt, name="masterOpt"),
+    url(r'^takeExamt/', views.takeExamt, name="takeExamt"),
+    url(r'^workt/', views.workt, name="workt"),
+    url(r'^finalExamOpt/', views.finalExamOpt, name="finalExamOpt"),
+    url(r'^graduationt/', views.graduationt, name="graduationt"),
+    url(r'^finishGamet/', views.finishGamet, name="finishGamet"),
+
+
+
+
+
+
+
+    ]
