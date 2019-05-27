@@ -26,7 +26,6 @@ def settings1(request):
 	html = template.render(locals())
 	return HttpResponse(html)
 
-
 def settings2(request):
 	return render(request, 'login/settings2.html')
 
@@ -970,3 +969,307 @@ def finishGamet(request):
 
 
 
+#leo first and second grade
+
+
+def startl(request):
+	return render(request, '1-2/leo/1start.html')
+
+def eatopl(request):
+	return render(request, '1-2/leo/2eatop.html')
+
+def eatgoodl(request):
+	return render(request, '1-2/leo/3-1eatgood.html')
+
+def eatgood2l(request):
+	return render(request, '1-2/leo/3-2eatgood2.html')
+
+def eatgood3l(request):
+	return render(request, '1-2/leo/3-3eatgood3.html')
+
+def eatnol(request):
+	return render(request, '1-2/leo/3-4eatno.html')
+
+def class1l(request):
+	return render(request, '1-2/leo/4class.html')
+
+def classopl(request):
+	return render(request, '1-2/leo/5classop.html')
+
+def classbookl(request):
+	return render(request, '1-2/leo/6-1classbook.html')
+
+def classvideol(request):
+	return render(request, '1-2/leo/6-2classvideo.html')
+
+def classsleepl(request):
+	return render(request, '1-2/leo/6-3classsleep.html')
+
+def homel(request):
+	return render(request, '1-2/leo/7home.html')
+
+def homeopl(request):
+	return render(request, '1-2/leo/8homeop.html')
+
+def homeop101l(request):
+	return render(request, '1-2/leo/9-1homeop1-1.html')
+
+def eatgood4l(request):
+	return render(request, '1-2/leo/9-2-1eatgood4.html')
+
+def eatgood5l(request):
+	return render(request, '1-2/leo/9-2-2eatgood5.html')
+
+def eatgood6l(request):
+	return render(request, '1-2/leo/9-2-3eatgood6.html')
+
+def eatgood7l(request):
+	return render(request, '1-2/leo/9-2-4eatgood7.html')
+
+def eatop2l(request):
+	return render(request, '1-2/leo/9-2eatop2.html')
+
+def homeop103l(request):
+	return render(request, '1-2/leo/9-3homeop1-3.html')
+
+def homeop104l(request):
+	return render(request, '1-2/leo/9-4homeop1-4.html')
+
+def clubl(request):
+	return render(request, '1-2/leo/10club.html')
+
+def club1l(request):
+	return render(request, '1-2/leo/11-1club1.html')
+
+def club2l(request):
+	return render(request, '1-2/leo/11-2club2.html')
+
+def club3l(request):
+	return render(request, '1-2/leo/11-3club3.html')
+
+def loverl(request):
+	return render(request, '1-2/leo/12lover.html')
+
+def loveropl(request):
+	return render(request, '1-2/leo/13loverop.html')
+
+def loverlovel(request):
+	return render(request, '1-2/leo/14-1-1loverlove.html')
+
+def loverlove2l(request):
+	return render(request, '1-2/leo/14-1-2loverlove2.html')
+
+def loverlove3l(request):
+	return render(request, '1-2/leo/14-1-3loverlove3.html')
+
+def lovertalkl(request):
+	return render(request, '1-2/leo/14-2lovertalk.html')
+
+def campl(request):
+	return render(request, '1-2/leo/15camp.html')
+
+def campgol(request):
+	return render(request, '1-2/leo/16campgo.html')
+
+def midterml(request):
+	return render(request, '1-2/leo/17midterm.html')
+
+def midtermopl(request):
+	return render(request, '1-2/leo/18midtermop.html')
+
+def proml(request):
+	return render(request, '1-2/leo/19prom.html')
+
+def promgol(request):
+	return render(request, '1-2/leo/20promgo.html')
+
+def finall(request):
+	return render(request, '1-2/leo/21final.html')
+
+def winterVacation1l(request):
+	return render(request, '1-2/leo/22winterVacation1.html')
+
+def winterVacation101l(request):
+	return render(request, '1-2/leo/23-1winterVacation1-1.html')
+
+def winterVacation102l(request):
+	return render(request, '1-2/leo/23-2winterVacation1-2.html')
+
+def winterVacationEnd1l(request):
+	return render(request, '1-2/leo/24winterVacationEnd1.html')
+
+def ktvl(request):
+	return render(request, '1-2/leo/25ktv.html')
+
+def ktvgol(request):
+	return render(request, '1-2/leo/26ktvgo.html')
+
+def secondDrop1l(request):
+	return render(request, '1-2/leo/27secondDrop1.html')
+
+def secondDrop1okl(request):
+	return render(request, '1-2/leo/28secondDrop1ok.html')
+
+def summerVacation1l(request):
+	return render(request, '1-2/leo/29summerVacation1.html')
+
+def summerVacation101l(request):
+	return render(request, '1-2/leo/30-1summerVacation1-1.html')
+
+def summerVacation102l(request):
+	return render(request, '1-2/leo/30-2summerVacation1-2.html')
+
+def summerVacation103l(request):
+	return render(request, '1-2/leo/30-3summerVacation1-3.html')
+
+def summerVacation104l(request):
+	return render(request, '1-2/leo/30-4summerVacation1-4.html')
+
+def rentHousel(request):
+	return render(request, '1-2/leo/31rentHouse.html')
+
+def sophomoreOpl(request):
+	return render(request, '1-2/leo/32sophomoreOp.html')
+
+def sophomoreOp101l(request):
+	return render(request, '1-2/leo/33-1sophomoreOp1-1.html')
+
+def sophomoreOp102l(request):
+	return render(request, '1-2/leo/33-2sophomoreOp1-2.html')
+
+def sophomoreOp103l(request):
+	return render(request, '1-2/leo/33-3sophomoreOp1-3.html')
+
+def sophomoreOp104l(request):
+	return render(request, '1-2/leo/33-4sophomoreOp1-4.html')
+
+def lover2l(request):
+	return render(request, '1-2/leo/34lover2.html')
+
+def loverop2l(request):
+	return render(request, '1-2/leo/35loverop2.html')
+
+def loverokl(request):
+	return render(request, '1-2/leo/36-1loverok.html')
+
+def loverEndl(request):
+	return render(request, '1-2/leo/36-2loverEnd.html')
+
+def secondDrop2l(request):
+	return render(request, '1-2/leo/37secondDrop2.html')
+
+def secondDrop2okl(request):
+	return render(request, '1-2/leo/38secondDrop2ok.html')
+
+def winterVacation2l(request):
+	return render(request, '1-2/leo/39winterVacation2.html')
+
+def winterVacation201l(request):
+	return render(request, '1-2/leo/40-1winterVacation2-1.html')
+
+def winterVacation202l(request):
+	return render(request, '1-2/leo/40-2winterVacation2-2.html')
+
+def sophomore2l(request):
+	return render(request, '1-2/leo/41sophomore2.html')
+
+def finalExam2l(request):
+	return render(request, '1-2/leo/42finalExam2.html')
+
+def summerVacation2l(request):
+	return render(request, '1-2/leo/43summerVacation2.html')
+
+def summerVacation201l(request):
+	return render(request, '1-2/leo/44-1summerVacation2-1.html')
+
+def summerVacation202l(request):
+	return render(request, '1-2/leo/44-2summerVacation2-2.html')
+
+def summerVacation203l(request):
+	return render(request, '1-2/leo/44-3summerVacation2-3.html')
+
+def summerVacation204l(request):
+	return render(request, '1-2/leo/44-4summerVacation2-4.html')
+
+#leo 3-4
+
+def rdGradel(request):
+	return render(request, '3-4/leo/45_3rdGrade.html')
+
+def rdGradeOpl(request):
+	return render(request, '3-4/leo/46_3rdGradeOp.html')
+
+def exchangeOpl(request):
+	return render(request, '3-4/leo/47_exchangeOp.html')
+
+def countriesOpl(request):
+	return render(request, '3-4/leo/47-1_countriesOp.html')
+
+def USAl(request):
+	return render(request, '3-4/leo/47-1-1_USA.html')
+
+def Australial(request):
+	return render(request, '3-4/leo/47-1-2_Australia.html')
+
+def Germanyl(request):
+	return render(request, '3-4/leo/47-1-3_Germany.html')
+
+def Francel(request):
+	return render(request, '3-4/leo/47-1-4_France.html')
+
+def exchangeNl(request):
+	return render(request, '3-4/leo/47-2_exchangeN.html')
+
+def exchangeYl(request):
+	return render(request, '3-4/leo/48_exchangeY.html')
+
+def volleyballCaptonOpl(request):
+	return render(request, '3-4/leo/49_volleyballCaptonOp.html')
+
+def captonYl(request):
+	return render(request, '3-4/leo/49-1_captonY.html')
+
+def captonNl(request):
+	return render(request, '3-4/leo/49-2_captonN.html')
+
+def summerVacation3Opl(request):
+	return render(request, '3-4/leo/50_summerVacation3Op.html')
+
+def summerVacation31l(request):
+	return render(request, '3-4/leo/50-1_summerVacation3.html')
+
+def summerVacation32l(request):
+	return render(request, '3-4/leo/50-2_summerVacation3.html')
+
+def summerVacation33l(request):
+	return render(request, '3-4/leo/50-3_summerVacation3.html')
+
+def summerVacation34l(request):
+	return render(request, '3-4/leo/50-4_summerVacation3.html')
+
+def seniorl(request):
+	return render(request, '3-4/leo/51_senior.html')
+
+def seniorOpl(request):
+	return render(request, '3-4/leo/52_seniorOp.html')
+
+def internshipOpl(request):
+	return render(request, '3-4/leo/52-1_internshipOp.html')
+
+def masterOpl(request):
+	return render(request, '3-4/leo/52-2_masterOp.html')
+
+def takeExaml(request):
+	return render(request, '3-4/leo/53_takeExam.html')
+
+def workl(request):
+	return render(request, '3-4/leo/53_work.html')
+
+def finalExamOpl(request):
+	return render(request, '3-4/leo/54_finalExamOp.html')
+
+def graduationl(request):
+	return render(request, '3-4/leo/55_graduation.html')
+
+def finishGamel(request):
+	return render(request, '3-4/leo/56_finishGame.html')

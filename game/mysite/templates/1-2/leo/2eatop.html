@@ -1,34 +1,35 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="start.css">
+<link rel="stylesheet" href="{% static 'css/leo/start.css' %}">
 <html>
 <head>
-	<title>我的台科物語</title>
+  <title>我的台科物語</title>
 
 </head>
-<body  background="早餐.jpg">	
+<body  background="{% static 'images/leo/早餐.jpg' %}"> 
 <div class="id_wrapper">
-	<div class="name">
-		<div style="float:left;">
-		<img class="circular--square"/>
-		</div>
-		<div class="namefont">
-    	</div>
-  	</div>
-	<div class="dropdown" style="float:right;">
-  		<button class="dropbtn" style="font-size: 15px;">選單</button>
-  		<div class="dropdown-content">
-  			<a href="#">儲存目前進度</a>
-  			<a href="#">回主頁</a>
-  		</div>
-	</div>
+  <div class="name">
+    <div style="float:left;">
+    <img class="circular--square"/>
+    </div>
+    <div class="namefont">
+      </div>
+    </div>
+  <div class="dropdown" style="float:right;">
+      <button class="dropbtn" style="font-size: 15px;">選單</button>
+      <div class="dropdown-content">
+        <a href="#">儲存目前進度</a>
+        <a href="{% url 'startGame' %}">回主頁</a>
+      </div>
+  </div>
   <div class="foot" style="float:right; border-radius: 20px;">
     &nbsp &nbsp 在台科吃的第一頓早餐！ 要吃什麼呢<br>
     <div style="text-align: center;">
-      <button class="button" onclick="location.href='3-1eatgood.html'"; >玉米蛋餅</button>
-      <button class="button" onclick="location.href='3-2eatgood2.html'";>蘿蔔糕</button><br>
-      <button class="button" onclick="location.href='3-3eatgood3.html'";>飯糰</button>
-      <button class="button" onclick="location.href='3-4eatno.html'";>不吃</button>
+      <button class="button" onclick="location.href='{% url 'eatgoodl' %}'"; >玉米蛋餅</button>
+      <button class="button" onclick="location.href='{% url 'eatgood2l' %}'";>蘿蔔糕</button><br>
+      <button class="button" onclick="location.href='{% url 'eatgood3l' %}'";>飯糰</button>
+      <button class="button" onclick="location.href='{% url 'eatnol' %}'";>不吃</button>
     </div>
   </div>
 </div>

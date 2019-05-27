@@ -1,12 +1,13 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="start.css">
+<link rel="stylesheet" href="{% static 'css/leo/start.css' %}">
 <html>
 <head>
   <title>我的台科物語</title>
 
 </head>
-<body  background="暑假.JPG"> 
+<body  background="{% static 'images/leo/暑假.JPG' %}"> 
 <div class="id_wrapper">
   <div class="name">
     <div style="float:left;">
@@ -19,16 +20,16 @@
       <button class="dropbtn" style="font-size: 15px;">選單</button>
       <div class="dropdown-content">
         <a href="#">儲存目前進度</a>
-        <a href="#">回主頁</a>
+        <a href="{% url 'startGame' %}">回主頁</a>
       </div>
   </div>
   <div class="foot" style="float:right; border-radius: 20px;">
     &nbsp &nbsp 大學可以玩的最後一個暑假！<br>
     <div style="text-align: center;">
-      <button class="button" onclick="location.href='44-1summerVacation2-1.html'";>舉辦營隊</button>
-      <button class="button" onclick="location.href='44-2summerVacation2-2.html'";>在台北打工</button><br>
-      <button class="button" onclick="location.href='44-3summerVacation2-3.html'";>回家躺著過</button>
-      <button class="button" onclick="location.href='44-4summerVacation2-4.html'";>出國去度假</button><br>
+      <button class="button" onclick="location.href='{% url 'summerVacation201l' %}'";>舉辦營隊</button>
+      <button class="button" onclick="location.href='{% url 'summerVacation202l' %}'";>在台北打工</button><br>
+      <button class="button" onclick="location.href='{% url 'summerVacation203l' %}'";>回家躺著過</button>
+      <button class="button" onclick="location.href='{% url 'summerVacation204l' %}'";>出國去度假</button><br>
     </div>
   </div>
 </div>

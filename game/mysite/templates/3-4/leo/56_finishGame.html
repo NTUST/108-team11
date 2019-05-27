@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
@@ -154,8 +155,8 @@ h1 {
 
 <h1>恭喜你過完大學生活了！<br>遊戲結果：</h1>
 
-<img id="DIV_PHOTO" src="karen.png" width="400" height="450">
-<p id="name">腿腿</p>
+<img id="DIV_PHOTO" src="{% static 'images/leo/leo.png' %}" width="400" height="450">
+<p id="name">Leo</p>
 <div id="family">家庭：</div>
 <div id="study">課業：</div>
 <div id="social">人際：</div>
@@ -164,8 +165,8 @@ h1 {
 <div id="love">愛情：</div>
 <div id="total">總分：</div>
 <div id="playAgain">Play Again?</div>
-<a href="startGame.html"><button class="bluebutton yesbutton">Yes</button></a>
-<a href="gameOver.html"><button class="redbutton nobutton">No</button></a>
+<a href="{% url 'startGame' %}"><button class="bluebutton yesbutton">Yes</button></a>
+<a href="{% url 'gameOver' %}"><button class="redbutton nobutton">No</button></a>
 
 </body>
 </html>
