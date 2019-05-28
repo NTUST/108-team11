@@ -19,7 +19,7 @@ def gameIntroduction(request):
 	return render(request, 'login/gameIntroduction.html')
 
 def teamIntroduction(request):
-	return render(request, 'login/teamIntroduction.html')
+	return render(request, 'login/teamIntroduction2.html')
 
 def settings1(request):
 	template = get_template('login/settings1.html')
