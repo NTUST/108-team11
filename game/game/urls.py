@@ -25,6 +25,8 @@ import mysite.views
 urlpatterns = [
     #url for login
 
+    url(r'^settings1try/', views.settings1try, name="settings1try"),
+
     url(r'^$', homePage),
     url(r'^startGame/', startGame, name="startGame"),
     url(r'^admin/', admin.site.urls),
