@@ -17,6 +17,7 @@ class emicoForm(forms.ModelForm):
 	class Meta:
 		model = user
 		fields = ['name']
+		labels = {'name':'暱稱'}
 
 def settings1(request):
 	if request.method == 'POST':
@@ -34,6 +35,7 @@ class karenForm(forms.ModelForm):
 	class Meta:
 		model = user
 		fields = ['name']
+		labels = {'name':'暱稱'}
 
 def settings2(request):
 	if request.method == 'POST':
@@ -51,6 +53,7 @@ class timmyForm(forms.ModelForm):
 	class Meta:
 		model = user
 		fields = ['name']
+		labels = {'name':'暱稱'}
 
 def settings3(request):
 	if request.method == 'POST':
@@ -68,6 +71,7 @@ class leoForm(forms.ModelForm):
 	class Meta:
 		model = user
 		fields = ['name']
+		labels = {'name':'暱稱'}
 
 def settings4(request):
 	if request.method == 'POST':
