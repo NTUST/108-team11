@@ -4,24 +4,6 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 # login
 
-def settings1try(request):
-	template = get_template('settings1.html')
-
-	try:
-		user_id = request.GET['fname']
-
-	except:
-		user_id = None
-		message = '填資料啦'
-
-	if user_id != None:
-		user_id = models.Post.objects.create(name=fname)
-
-		message='sucess'.format(user_pass)
-
-	html = template.render(local())
-
-	return HttpResponse(html)
 
 def homePage(request):
 	template = get_template('login/startGame.html')
