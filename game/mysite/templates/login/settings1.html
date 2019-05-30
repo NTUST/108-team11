@@ -17,6 +17,14 @@ input[type=text] {
   font-size: 20px;
 }
 
+input[type=password] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
 input[type=submit] {
   width: 100%;
   background-color: #9ab3e5;
@@ -73,6 +81,8 @@ h1 {
 <div>
     <label for="user_id">暱稱</label>
     <input type="text" id="user_id" name="user_id">
+    <label for="user_pw">密碼</label>
+    <input type="password" id="user_pw" name="user_pw">
     <a href="{% url 'start' %}"><input type="submit" value="完成">
   </form>
 </div>

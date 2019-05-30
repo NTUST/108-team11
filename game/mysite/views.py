@@ -2,7 +2,33 @@ from django.shortcuts import render,redirect,render_to_response
 from django.template.loader import get_template
 from django.http import HttpResponse, HttpResponseRedirect
 
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from .forms import UserRegisterForm
+
 # login
+
+
+
+'''def settings1(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Your account has been created! You are now able to log in')
+            return redirect('1-2/emico/1start.html')
+        
+        else:
+            return render(request, 'login/settings1.html', {'form': form})
+    else:
+        form = UserRegisterForm()
+        return render(request, 'login/settings1.html', {'form': form})'''
+
+
+
+
 
 
 def homePage(request):

@@ -26,6 +26,7 @@ urlpatterns = [
     #url for login
 
 
+
     url(r'^$', homePage),
     url(r'^startGame/', startGame, name="startGame"),
     url(r'^admin/', admin.site.urls),
@@ -476,7 +477,7 @@ urlpatterns = [
     url(r'^internshipOpl/', views.internshipOpl, name="internshipOpl"),
     url(r'^masterOpl/', views.masterOpl, name="masterOpl"),
     url(r'^takeExaml/', views.takeExaml, name="takeExaml"),
-    url(r'^workl/', views.work, name="work"),
+    url(r'^workl/', views.workl, name="workl"),
     url(r'^finalExamOpl/', views.finalExamOpl, name="finalExamOpl"),
     url(r'^graduationl/', views.graduationl, name="graduationl"),
     url(r'^finishGamel/', views.finishGamel, name="finishGamel"),
