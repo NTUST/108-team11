@@ -1,30 +1,84 @@
 from django.shortcuts import render,redirect,render_to_response
 from django.template.loader import get_template
 from django.http import HttpResponse, HttpResponseRedirect
-
+from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
+from mysite.models import user
 
 # login
 
 
 
-'''def settings1(request):
-    if request.method == 'POST':
-        form = UserRegisterForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            messages.success(request, f'Your account has been created! You are now able to log in')
-            return redirect('1-2/emico/1start.html')
-        
-        else:
-            return render(request, 'login/settings1.html', {'form': form})
-    else:
-        form = UserRegisterForm()
-        return render(request, 'login/settings1.html', {'form': form})'''
+class emicoForm(forms.ModelForm):
+	"""docstring for emicoForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+
+def settings1(request):
+	if request.method == 'POST':
+		form = emicoForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/start/')
+
+	form = emicoForm()
+	return render(request, 'login/settings1.html', {'form': form})
+
+
+class karenForm(forms.ModelForm):
+	"""docstring for karenForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+
+def settings2(request):
+	if request.method == 'POST':
+		form = karenForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/startk/')
+
+	form = karenForm()
+	return render(request, 'login/settings2.html', {'form': form})
+
+
+class timmyForm(forms.ModelForm):
+	"""docstring for timmyForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+
+def settings3(request):
+	if request.method == 'POST':
+		form = timmyForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/startt/')
+
+	form = timmyForm()
+	return render(request, 'login/settings3.html', {'form': form})
+
+
+class leoForm(forms.ModelForm):
+	"""docstring for leoForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+
+def settings4(request):
+	if request.method == 'POST':
+		form = leoForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/startl/')
+
+	form = leoForm()
+	return render(request, 'login/settings4.html', {'form': form})
+
 
 
 
@@ -48,7 +102,7 @@ def gameIntroduction(request):
 def teamIntroduction(request):
 	return render(request, 'login/teamIntroduction2.html')
 
-def settings1(request):
+'''def settings1(request):
 	template = get_template('login/settings1.html')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -62,7 +116,7 @@ def settings3(request):
 
 
 def settings4(request):
-	return render(request, 'login/settings4.html')
+	return render(request, 'login/settings4.html')'''
 
 #emico 1-2
 

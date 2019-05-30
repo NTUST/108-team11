@@ -10,3 +10,5 @@ class user(models.Model):
 	health = models.IntegerField(default=0)
 	wealth = models.IntegerField(default=0)
 	love = models.IntegerField(default=0)
+
+

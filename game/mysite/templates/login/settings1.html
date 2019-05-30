@@ -79,12 +79,16 @@ h1 {
 <a href="{% url 'selectCharactor' %}"><img id="return" src="https://image.flaticon.com/icons/png/512/35/35724.png" width="100" height="100"></a>
 
 <div>
-    <label for="user_id">暱稱</label>
+    <!--<label for="user_id">暱稱</label>
     <input type="text" id="user_id" name="user_id">
     <label for="user_pw">密碼</label>
     <input type="password" id="user_pw" name="user_pw">
     <a href="{% url 'start' %}"><input type="submit" value="完成">
-  </form>
+  </form>-->
+  <form action="." method="POST">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type='submit' />
 </div>
 
 <img id="DIV_PHOTO" src="{% static 'images/emico.png' %}" width="380" height="500">
