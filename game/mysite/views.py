@@ -5,7 +5,6 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .forms import UserRegisterForm
 from mysite.models import user
 
 # login

@@ -79,14 +79,11 @@ label {
 <a href="{% url 'selectCharactor' %}"><img id="return" src="https://image.flaticon.com/icons/png/512/35/35724.png" width="100" height="100"></a>
 
 <div>
-    <!--<label for="fname">暱稱</label>
-    <input type="text" id="fname" name="fname">
-    <a href="{% url 'startl' %}"><input type="submit" value="完成">
-  </form>-->
   <form action="." method="POST">
     {% csrf_token %}
     {{ form.as_p}}
     <input type='submit' />
+  </form>
 </div>
 
 <img id="DIV_PHOTO" src="{% static 'images/leo.png' %}" width="430" height="530">
