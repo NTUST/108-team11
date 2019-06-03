@@ -17,6 +17,7 @@ class emicoForm(forms.ModelForm):
 		model = user
 		fields = ['name']
 		labels = {'name':'暱稱'}
+		
 
 def settings1(request):
 	if request.method == 'POST':

@@ -11,4 +11,5 @@ class user(models.Model):
 	wealth = models.IntegerField(default=0)
 	love = models.IntegerField(default=0)
 
-
+	class Meta:
+		ordering = ["name"]
