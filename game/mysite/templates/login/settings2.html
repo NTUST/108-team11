@@ -18,6 +18,7 @@ input[type=text] {
 }
 
 input[type=submit] {
+  font-weight: bold;
   width: 100%;
   background-color: #d1d5e0;
   color: black;
@@ -58,6 +59,15 @@ div {
 
 h1 {
   text-align: center;
+  font-size:250%;
+}
+
+label {
+  font-weight: bold;
+  font-family: "Microsoft JhengHei", Verdana, Halvetica, Arial;
+  font-size: 30px;
+  color: #040507;
+  display: block;
 }
 
 </style>
@@ -66,12 +76,15 @@ h1 {
 
 <h1>設定你的小公仔</h1>
 
+<iframe style="display:none" src="{% static 'music/karen.mp3' %}" allow="autoplay" id="audio"></iframe>
+
 <a href="{% url 'selectCharactor' %}"><img id="return" src="https://image.flaticon.com/icons/png/512/35/35724.png" width="100" height="100"></a>
 
 <div>
-    <label for="fname">暱稱</label>
-    <input type="text" id="fname" name="fname">
-    <a href="{% url 'startk' %}"><input type="submit" value="完成"></a>
+  <form action="." method="POST">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type='submit' />
   </form>
 </div>
 

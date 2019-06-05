@@ -1,8 +1,93 @@
 from django.shortcuts import render,redirect,render_to_response
 from django.template.loader import get_template
 from django.http import HttpResponse, HttpResponseRedirect
+from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from mysite.models import user
 
 # login
+
+
+
+class emicoForm(forms.ModelForm):
+	"""docstring for emicoForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+		labels = {'name':'暱稱'}
+		
+
+def settings1(request):
+	if request.method == 'POST':
+		form = emicoForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/start/')
+
+	form = emicoForm()
+	return render(request, 'login/settings1.html', {'form': form})
+
+
+class karenForm(forms.ModelForm):
+	"""docstring for karenForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+		labels = {'name':'暱稱'}
+
+def settings2(request):
+	if request.method == 'POST':
+		form = karenForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/startk/')
+
+	form = karenForm()
+	return render(request, 'login/settings2.html', {'form': form})
+
+
+class timmyForm(forms.ModelForm):
+	"""docstring for timmyForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+		labels = {'name':'暱稱'}
+
+def settings3(request):
+	if request.method == 'POST':
+		form = timmyForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/startt/')
+
+	form = timmyForm()
+	return render(request, 'login/settings3.html', {'form': form})
+
+
+class leoForm(forms.ModelForm):
+	"""docstring for leoForm"""
+	class Meta:
+		model = user
+		fields = ['name']
+		labels = {'name':'暱稱'}
+
+def settings4(request):
+	if request.method == 'POST':
+		form = leoForm(request.POST)
+		if form.is_valid():
+			new_name = form.save()
+			return HttpResponseRedirect('/startl/')
+
+	form = leoForm()
+	return render(request, 'login/settings4.html', {'form': form})
+
+
+
+
+
+
 
 def homePage(request):
 	template = get_template('login/startGame.html')
@@ -21,7 +106,7 @@ def gameIntroduction(request):
 def teamIntroduction(request):
 	return render(request, 'login/teamIntroduction2.html')
 
-def settings1(request):
+'''def settings1(request):
 	template = get_template('login/settings1.html')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -35,7 +120,7 @@ def settings3(request):
 
 
 def settings4(request):
-	return render(request, 'login/settings4.html')
+	return render(request, 'login/settings4.html')'''
 
 #emico 1-2
 

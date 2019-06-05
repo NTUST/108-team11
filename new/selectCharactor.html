@@ -1,7 +1,8 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>我的台科物語</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -82,17 +83,17 @@ img:hover {
 <body>
 
 <header>
-  <a href="startGame.html"><img id="BACK_TO_HOME" src="http://www5.ndmctsgh.edu.tw/gh/images/home.png"></a>
+  <a href="{% url 'startGame' %}"><img id="BACK_TO_HOME" src="http://www5.ndmctsgh.edu.tw/gh/images/home.png"></a>
   <h2>請選擇角色</h2>
 </header>
 
 <section>
   
   <div>
-	  <a href="settings1.html"><img src="emico_2.png" width="280" height="630"></a>
-    <a href="settings2.html"><img src="karen_1.png" width="300" height="610"></a>
-    <a href="settings3.html"><img src="timmy_1_new.png" width="300" height="670"></a>
-    <a href="settings4.html"><img src="leo_1.png" width="285" height="640"></a>
+	  <a href="{% url 'settings1' %}"><img src="emico_2.png" width="280" height="630"></a>
+    <a href="{% url 'settings2' %}"><img src="karen_1.png" width="300" height="610"></a>
+    <a href="{% url 'settings3' %}"><img src="timmy_1_new.png" width="300" height="670"></a>
+    <a href="{% url 'settings4' %}"><img src="leo_1.png" width="285" height="640"></a>
   </div>
   
 </section>
