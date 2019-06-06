@@ -13,17 +13,6 @@ body{
     float:left;
 }
 
-.namefont::before{
-  float:left;
-  font-size:50px;
-  color:#FF7F50; 
-  -webkit-text-stroke: 1px #FF7F50;
-  text-align:center;
-  line-height:110px; 
-  border-radius:5px;
-  content:" 腿腿";
-}
-
 .circular--square {
   border-radius: 50%;
   border:5px white solid;
