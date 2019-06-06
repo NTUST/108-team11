@@ -112,9 +112,6 @@ def teamIntroduction(request):
 #emico 1-2
 
 def start(request):
-	User= user.objects.latest('date')
-	User.family += 1
-	User.save()
 	return render(request, '1-2/emico/1start.html')
 
 def eatop(request):
@@ -201,7 +198,7 @@ def eatop2(request):
 def homeop103(request):
 	User= user.objects.latest('date')
 	User.friendship += 15
-	User.wealth -= 15
+	User.wealth -= 5
 	User.save()
 	return render(request, '1-2/emico/9-3homeop1-3.html')
 
@@ -264,7 +261,7 @@ def midterm(request):
 
 def midtermop(request):
 	User= user.objects.latest('date')
-	User.education += 15
+	User.education += 20
 	User.save()
 	return render(request, '1-2/emico/18midtermop.html')
 
@@ -352,7 +349,7 @@ def sophomoreOp(request):
 
 def sophomoreOp101(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/33-1sophomoreOp1-1.html')
 
@@ -574,12 +571,21 @@ def eatopk(request):
 	return render(request, '1-2/karen/2eatop.html')
 
 def eatgoodk(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/karen/3-1eatgood.html')
 
 def eatgood2k(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/karen/3-2eatgood2.html')
 
 def eatgood3k(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/karen/3-3eatgood3.html')
 
 def eatnok(request):
@@ -592,6 +598,9 @@ def classopk(request):
 	return render(request, '1-2/karen/5classop.html')
 
 def classbookk(request):
+	User= user.objects.latest('date')
+	User.education += 50
+	User.save()
 	return render(request, '1-2/karen/6-1classbook.html')
 
 def classvideok(request):
@@ -607,39 +616,70 @@ def homeopk(request):
 	return render(request, '1-2/karen/8homeop.html')
 
 def homeop101k(request):
+	User= user.objects.latest('date')
+	User.health += 10
+	User.save()
 	return render(request, '1-2/karen/9-1homeop1-1.html')
 
 def eatgood4k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/9-2-1eatgood4.html')
 
 def eatgood5k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/9-2-2eatgood5.html')
 
 def eatgood6k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/9-2-3eatgood6.html')
 
 def eatgood7k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/9-2-4eatgood7.html')
 
 def eatop2k(request):
 	return render(request, '1-2/karen/9-2eatop2.html')
 
 def homeop103k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/karen/9-3homeop1-3.html')
 
 def homeop104k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/9-4homeop1-4.html')
 
 def clubk(request):
 	return render(request, '1-2/karen/10club.html')
 
 def club1k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/11-1club1.html')
 
 def club2k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/11-2club2.html')
 
 def club3k(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/11-3club3.html')
 
 def loverk(request):
@@ -664,18 +704,27 @@ def campk(request):
 	return render(request, '1-2/karen/15camp.html')
 
 def campgok(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/16campgo.html')
 
 def midtermk(request):
 	return render(request, '1-2/karen/17midterm.html')
 
 def midtermopk(request):
+	User= user.objects.latest('date')
+	User.education += 20
+	User.save()
 	return render(request, '1-2/karen/18midtermop.html')
 
 def promk(request):
 	return render(request, '1-2/karen/19prom.html')
 
 def promgok(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/karen/20promgo.html')
 
 def finalk(request):
@@ -685,9 +734,15 @@ def winterVacation1k(request):
 	return render(request, '1-2/karen/22winterVacation1.html')
 
 def winterVacation101k(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/karen/23-1winterVacation1-1.html')
 
 def winterVacation102k(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/karen/23-2winterVacation1-2.html')
 
 def winterVacationEnd1k(request):
@@ -697,6 +752,10 @@ def ktvk(request):
 	return render(request, '1-2/karen/25ktv.html')
 
 def ktvgok(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/karen/26ktvgo.html')
 
 def secondDrop1k(request):
@@ -709,33 +768,60 @@ def summerVacation1k(request):
 	return render(request, '1-2/karen/29summerVacation1.html')
 
 def summerVacation101k(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/karen/30-1summerVacation1-1.html')
 
 def summerVacation102k(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/karen/30-2summerVacation1-2.html')
 
 def summerVacation103k(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/karen/30-3summerVacation1-3.html')
 
 def summerVacation104k(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/karen/30-4summerVacation1-4.html')
 
 def rentHousek(request):
+	User= user.objects.latest('date')
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/karen/31rentHouse.html')
 
 def sophomoreOpk(request):
 	return render(request, '1-2/karen/32sophomoreOp.html')
 
 def sophomoreOp101k(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/karen/33-1sophomoreOp1-1.html')
 
 def sophomoreOp102k(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/karen/33-2sophomoreOp1-2.html')
 
 def sophomoreOp103k(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/karen/33-3sophomoreOp1-3.html')
 
 def sophomoreOp104k(request):
+	User= user.objects.latest('date')
+	User.education += 5
+	User.save()
 	return render(request, '1-2/karen/33-4sophomoreOp1-4.html')
 
 def lover2k(request):
@@ -745,6 +831,9 @@ def loverop2k(request):
 	return render(request, '1-2/karen/35loverop2.html')
 
 def loverokk(request):
+	User= user.objects.latest('date')
+	User.love += 100
+	User.save()
 	return render(request, '1-2/karen/36-1loverok.html')
 
 def loverEndk(request):
@@ -760,6 +849,10 @@ def winterVacation2k(request):
 	return render(request, '1-2/karen/39winterVacation2.html')
 
 def winterVacation201k(request):
+	User= user.objects.latest('date')
+	User.family += 60
+	User.wealth += 30
+	User.save()
 	return render(request, '1-2/karen/40-1winterVacation2-1.html')
 
 def winterVacation202k(request):
@@ -775,18 +868,31 @@ def summerVacation2k(request):
 	return render(request, '1-2/karen/43summerVacation2.html')
 
 def summerVacation201k(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/karen/44-1summerVacation2-1.html')
 
 def summerVacation202k(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/karen/44-2summerVacation2-2.html')
 
 def summerVacation203k(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/karen/44-3summerVacation2-3.html')
 
 def summerVacation204k(request):
+	User= user.objects.latest('date')
+	User.wealth -= 10
+	User.education += 1
+	User.save()
 	return render(request, '1-2/karen/44-4summerVacation2-4.html')
 
-#emico 3-4
+#karen 3-4
 
 def rdGradek(request):
 	return render(request, '3-4/karen/45_3rdGrade.html')
@@ -813,15 +919,24 @@ def Francek(request):
 	return render(request, '3-4/karen/47-1-4_France.html')
 
 def exchangeNk(request):
+	User= user.objects.latest('date')
+	User.education += 1
+	User.save()
 	return render(request, '3-4/karen/47-2_exchangeN.html')
 
 def exchangeYk(request):
+	User= user.objects.latest('date')
+	User.wealth -= 20
+	User.save()
 	return render(request, '3-4/karen/48_exchangeY.html')
 
 def volleyballCaptonOpk(request):
 	return render(request, '3-4/karen/49_volleyballCaptonOp.html')
 
 def captonYk(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '3-4/karen/49-1_captonY.html')
 
 def captonNk(request):
@@ -831,12 +946,21 @@ def summerVacation3Opk(request):
 	return render(request, '3-4/karen/50_summerVacation3Op.html')
 
 def summerVacation31k(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '3-4/karen/50-1_summerVacation3.html')
 
 def summerVacation32k(request):
+	User= user.objects.latest('date')
+	User.education += 1
+	User.save()
 	return render(request, '3-4/karen/50-2_summerVacation3.html')
 
 def summerVacation33k(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '3-4/karen/50-3_summerVacation3.html')
 
 def summerVacation34k(request):
@@ -855,15 +979,24 @@ def masterOpk(request):
 	return render(request, '3-4/karen/52-2_masterOp.html')
 
 def takeExamk(request):
+	User= user.objects.latest('date')
+	User.education += 12
+	User.save()
 	return render(request, '3-4/karen/53_takeExam.html')
 
 def workk(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '3-4/karen/53_work.html')
 
 def finalExamOpk(request):
 	return render(request, '3-4/karen/54_finalExamOp.html')
 
 def graduationk(request):
+	User= user.objects.latest('date')
+	User.education += 10
+	User.save()
 	return render(request, '3-4/karen/55_graduation.html')
 
 def finishGamek(request):
@@ -887,12 +1020,21 @@ def eatopt(request):
 	return render(request, '1-2/timmy/2eatop.html')
 
 def eatgoodt(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/timmy/3-1eatgood.html')
 
 def eatgood2t(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/timmy/3-2eatgood2.html')
 
 def eatgood3t(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/timmy/3-3eatgood3.html')
 
 def eatnot(request):
@@ -905,6 +1047,9 @@ def classopt(request):
 	return render(request, '1-2/timmy/5classop.html')
 
 def classbookt(request):
+	User= user.objects.latest('date')
+	User.education += 50
+	User.save()
 	return render(request, '1-2/timmy/6-1classbook.html')
 
 def classvideot(request):
@@ -920,39 +1065,70 @@ def homeopt(request):
 	return render(request, '1-2/timmy/8homeop.html')
 
 def homeop101t(request):
+	User= user.objects.latest('date')
+	User.health += 10
+	User.save()
 	return render(request, '1-2/timmy/9-1homeop1-1.html')
 
 def eatgood4t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/9-2-1eatgood4.html')
 
 def eatgood5t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/9-2-2eatgood5.html')
 
 def eatgood6t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/9-2-3eatgood6.html')
 
 def eatgood7t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/9-2-4eatgood7.html')
 
 def eatop2t(request):
 	return render(request, '1-2/timmy/9-2eatop2.html')
 
 def homeop103t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/timmy/9-3homeop1-3.html')
 
 def homeop104t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/9-4homeop1-4.html')
 
 def clubt(request):
 	return render(request, '1-2/timmy/10club.html')
 
 def club1t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/11-1club1.html')
 
 def club2t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/11-2club2.html')
 
 def club3t(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/11-3club3.html')
 
 def lovert(request):
@@ -977,18 +1153,27 @@ def campt(request):
 	return render(request, '1-2/timmy/15camp.html')
 
 def campgot(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/16campgo.html')
 
 def midtermt(request):
 	return render(request, '1-2/timmy/17midterm.html')
 
 def midtermopt(request):
+	User= user.objects.latest('date')
+	User.education += 20
+	User.save()
 	return render(request, '1-2/timmy/18midtermop.html')
 
 def promt(request):
 	return render(request, '1-2/timmy/19prom.html')
 
 def promgot(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/timmy/20promgo.html')
 
 def finalt(request):
@@ -998,9 +1183,15 @@ def winterVacation1t(request):
 	return render(request, '1-2/timmy/22winterVacation1.html')
 
 def winterVacation101t(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/timmy/23-1winterVacation1-1.html')
 
 def winterVacation102t(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/timmy/23-2winterVacation1-2.html')
 
 def winterVacationEnd1t(request):
@@ -1010,6 +1201,10 @@ def ktvt(request):
 	return render(request, '1-2/timmy/25ktv.html')
 
 def ktvgot(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/timmy/26ktvgo.html')
 
 def secondDrop1t(request):
@@ -1022,33 +1217,60 @@ def summerVacation1t(request):
 	return render(request, '1-2/timmy/29summerVacation1.html')
 
 def summerVacation101t(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/timmy/30-1summerVacation1-1.html')
 
 def summerVacation102t(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/timmy/30-2summerVacation1-2.html')
 
 def summerVacation103t(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/timmy/30-3summerVacation1-3.html')
 
 def summerVacation104t(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/timmy/30-4summerVacation1-4.html')
 
 def rentHouset(request):
+	User= user.objects.latest('date')
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/timmy/31rentHouse.html')
 
 def sophomoreOpt(request):
 	return render(request, '1-2/timmy/32sophomoreOp.html')
 
 def sophomoreOp101t(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/timmy/33-1sophomoreOp1-1.html')
 
 def sophomoreOp102t(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/timmy/33-2sophomoreOp1-2.html')
 
 def sophomoreOp103t(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/timmy/33-3sophomoreOp1-3.html')
 
 def sophomoreOp104t(request):
+	User= user.objects.latest('date')
+	User.education += 5
+	User.save()
 	return render(request, '1-2/timmy/33-4sophomoreOp1-4.html')
 
 def lover2t(request):
@@ -1058,6 +1280,9 @@ def loverop2t(request):
 	return render(request, '1-2/timmy/35loverop2.html')
 
 def loverokt(request):
+	User= user.objects.latest('date')
+	User.love += 100
+	User.save()
 	return render(request, '1-2/timmy/36-1loverok.html')
 
 def loverEndt(request):
@@ -1073,6 +1298,10 @@ def winterVacation2t(request):
 	return render(request, '1-2/timmy/39winterVacation2.html')
 
 def winterVacation201t(request):
+	User= user.objects.latest('date')
+	User.family += 60
+	User.wealth += 30
+	User.save()
 	return render(request, '1-2/timmy/40-1winterVacation2-1.html')
 
 def winterVacation202t(request):
@@ -1088,15 +1317,28 @@ def summerVacation2t(request):
 	return render(request, '1-2/timmy/43summerVacation2.html')
 
 def summerVacation201t(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/timmy/44-1summerVacation2-1.html')
 
 def summerVacation202t(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/timmy/44-2summerVacation2-2.html')
 
 def summerVacation203t(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/timmy/44-3summerVacation2-3.html')
 
 def summerVacation204t(request):
+	User= user.objects.latest('date')
+	User.wealth -= 10
+	User.education += 1
+	User.save()
 	return render(request, '1-2/timmy/44-4summerVacation2-4.html')
 
 #timmy third and forth grade
@@ -1126,15 +1368,24 @@ def Francet(request):
 	return render(request, '3-4/timmy/47-1-4_France.html')
 
 def exchangeNt(request):
+	User= user.objects.latest('date')
+	User.education += 1
+	User.save()
 	return render(request, '3-4/timmy/47-2_exchangeN.html')
 
 def exchangeYt(request):
+	User= user.objects.latest('date')
+	User.wealth -= 20
+	User.save()
 	return render(request, '3-4/timmy/48_exchangeY.html')
 
 def volleyballCaptonOpt(request):
 	return render(request, '3-4/timmy/49_volleyballCaptonOp.html')
 
 def captonYt(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '3-4/timmy/49-1_captonY.html')
 
 def captonNt(request):
@@ -1144,12 +1395,21 @@ def summerVacation3Opt(request):
 	return render(request, '3-4/timmy/50_summerVacation3Op.html')
 
 def summerVacation31t(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '3-4/timmy/50-1_summerVacation3.html')
 
 def summerVacation32t(request):
+	User= user.objects.latest('date')
+	User.education += 1
+	User.save()
 	return render(request, '3-4/timmy/50-2_summerVacation3.html')
 
 def summerVacation33t(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '3-4/timmy/50-3_summerVacation3.html')
 
 def summerVacation34t(request):
@@ -1168,15 +1428,24 @@ def masterOpt(request):
 	return render(request, '3-4/timmy/52-2_masterOp.html')
 
 def takeExamt(request):
+	User= user.objects.latest('date')
+	User.education += 12
+	User.save()
 	return render(request, '3-4/timmy/53_takeExam.html')
 
 def workt(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '3-4/timmy/53_work.html')
 
 def finalExamOpt(request):
 	return render(request, '3-4/timmy/54_finalExamOp.html')
 
 def graduationt(request):
+	User= user.objects.latest('date')
+	User.education += 10
+	User.save()
 	return render(request, '3-4/timmy/55_graduation.html')
 
 def finishGamet(request):
