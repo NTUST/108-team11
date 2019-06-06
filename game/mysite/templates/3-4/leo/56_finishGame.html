@@ -156,14 +156,13 @@ h1 {
 <h1>恭喜你過完大學生活了！<br>遊戲結果：</h1>
 
 <img id="DIV_PHOTO" src="{% static 'images/leo/leo.png' %}" width="400" height="450">
-<p id="name">Leo</p>
-<div id="family">家庭：</div>
-<div id="study">課業：</div>
-<div id="social">人際：</div>
-<div id="health">健康：</div>
-<div id="money">金錢：</div>
-<div id="love">愛情：</div>
-<div id="total">總分：</div>
+<p id="name">{{User.name}}</p>
+<div id="family">家庭：{{User.family}}</div>
+<div id="study">課業：{{User.education}}</div>
+<div id="social">人際：{{User.friendship}}</div>
+<div id="health">健康：{{User.health}}</div>
+<div id="money">金錢：{{User.wealth}}</div>
+<div id="love">愛情：{{User.love}}</div>
 <div id="playAgain">Play Again?</div>
 <a href="{% url 'startGame' %}"><button class="bluebutton yesbutton">Yes</button></a>
 <a href="{% url 'gameOver' %}"><button class="redbutton nobutton">No</button></a>

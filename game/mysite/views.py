@@ -414,7 +414,10 @@ def graduation(request):
 	return render(request, '3-4/emico/55_graduation.html')
 
 def finishGame(request):
-	return render(request, '3-4/emico/56_finishGame.html')
+	template = get_template('3-4/emico/56_finishGame.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
 
 def gameOver(request):
 	return render(request, 'end/gameOver.html')
@@ -728,7 +731,10 @@ def graduationk(request):
 	return render(request, '3-4/karen/55_graduation.html')
 
 def finishGamek(request):
-	return render(request, '3-4/karen/56_finishGame.html')
+	template = get_template('3-4/karen/56_finishGame.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
 
 
 
@@ -1038,7 +1044,10 @@ def graduationt(request):
 	return render(request, '3-4/timmy/55_graduation.html')
 
 def finishGamet(request):
-	return render(request, '3-4/timmy/56_finishGame.html')
+	template = get_template('3-4/timmy/56_finishGame.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
 
 
 
@@ -1347,4 +1356,7 @@ def graduationl(request):
 	return render(request, '3-4/leo/55_graduation.html')
 
 def finishGamel(request):
-	return render(request, '3-4/leo/56_finishGame.html')
+	template = get_template('3-4/leo/56_finishGame.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
