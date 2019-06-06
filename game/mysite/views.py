@@ -170,25 +170,25 @@ def homeop101(request):
 
 def eatgood4(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/9-2-1eatgood4.html')
 
 def eatgood5(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/9-2-2eatgood5.html')
 
 def eatgood6(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/9-2-3eatgood6.html')
 
 def eatgood7(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/9-2-4eatgood7.html')
 
@@ -623,25 +623,25 @@ def homeop101k(request):
 
 def eatgood4k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/karen/9-2-1eatgood4.html')
 
 def eatgood5k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/karen/9-2-2eatgood5.html')
 
 def eatgood6k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/karen/9-2-3eatgood6.html')
 
 def eatgood7k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/karen/9-2-4eatgood7.html')
 
@@ -1072,25 +1072,25 @@ def homeop101t(request):
 
 def eatgood4t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/timmy/9-2-1eatgood4.html')
 
 def eatgood5t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/timmy/9-2-2eatgood5.html')
 
 def eatgood6t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/timmy/9-2-3eatgood6.html')
 
 def eatgood7t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/timmy/9-2-4eatgood7.html')
 
@@ -1520,25 +1520,25 @@ def homeop101l(request):
 
 def eatgood4l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/leo/9-2-1eatgood4.html')
 
 def eatgood5l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/leo/9-2-2eatgood5.html')
 
 def eatgood6l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/leo/9-2-3eatgood6.html')
 
 def eatgood7l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/leo/9-2-4eatgood7.html')
 
