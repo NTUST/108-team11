@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect,render_to_response
+from django.shortcuts import render,redirect,render_to_response, get_object_or_404
 from django.template.loader import get_template
 from django.http import HttpResponse, HttpResponseRedirect
 from django import forms
@@ -6,6 +6,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from mysite.models import user
+
+from django.views import generic
 
 # login
 
@@ -106,25 +108,13 @@ def gameIntroduction(request):
 def teamIntroduction(request):
 	return render(request, 'login/teamIntroduction2.html')
 
-'''def settings1(request):
-	template = get_template('login/settings1.html')
-	html = template.render(locals())
-	return HttpResponse(html)
-
-def settings2(request):
-	return render(request, 'login/settings2.html')
-
-
-def settings3(request):
-	return render(request, 'login/settings3.html')
-
-
-def settings4(request):
-	return render(request, 'login/settings4.html')'''
 
 #emico 1-2
 
 def start(request):
+	User= user.objects.latest('date')
+	User.family += 1
+	User.save()
 	return render(request, '1-2/emico/1start.html')
 
 def eatop(request):
