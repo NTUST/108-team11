@@ -1011,7 +1011,7 @@ def finishGamek(request):
 
 
 
-#timmy first and second grade
+#timmy 1-2
 
 def startt(request):
 	return render(request, '1-2/timmy/1start.html')
@@ -1341,7 +1341,7 @@ def summerVacation204t(request):
 	User.save()
 	return render(request, '1-2/timmy/44-4summerVacation2-4.html')
 
-#timmy third and forth grade
+#timmy 3-4
 
 def rdGradet(request):
 	return render(request, '3-4/timmy/45_3rdGrade.html')
@@ -1458,7 +1458,7 @@ def finishGamet(request):
 
 
 
-#leo first and second grade
+#leo 1-2
 
 
 def startl(request):
