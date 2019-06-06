@@ -14,17 +14,7 @@ body{
     float:left;
 }
 
-.namefont::before{
-  font-family: "Microsoft JhengHei", Verdana, Halvetica, Arial;
-  float:left;
-  font-size:50px;
-  color:#FF7F50; 
-  -webkit-text-stroke: 1px #FF7F50;
-  text-align:center;
-  line-height:110px; 
-  border-radius:5px;
-  content:" Emico";
-}
+
 
 .circular--square {
   border-radius: 50%;
