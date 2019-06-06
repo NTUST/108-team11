@@ -173,25 +173,25 @@ def homeop101(request):
 
 def eatgood4(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/9-2-1eatgood4.html')
 
 def eatgood5(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/9-2-2eatgood5.html')
 
 def eatgood6(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/9-2-3eatgood6.html')
 
 def eatgood7(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/9-2-4eatgood7.html')
 
@@ -200,14 +200,14 @@ def eatop2(request):
 
 def homeop103(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.wealth -= 15
 	User.save()
 	return render(request, '1-2/emico/9-3homeop1-3.html')
 
 def homeop104(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/9-4homeop1-4.html')
 
@@ -216,19 +216,19 @@ def club(request):
 
 def club1(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/11-1club1.html')
 
 def club2(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/11-2club2.html')
 
 def club3(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/11-3club3.html')
 
@@ -255,7 +255,7 @@ def camp(request):
 
 def campgo(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/16campgo.html')
 
@@ -273,7 +273,7 @@ def prom(request):
 
 def promgo(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/20promgo.html')
 
@@ -285,7 +285,7 @@ def winterVacation1(request):
 
 def winterVacation101(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 10
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/23-1winterVacation1-1.html')
 
@@ -303,7 +303,7 @@ def ktv(request):
 
 def ktvgo(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 10
+	User.friendship += 10
 	User.wealth -= 5
 	User.save()
 	return render(request, '1-2/emico/26ktvgo.html')
@@ -319,7 +319,7 @@ def summerVacation1(request):
 
 def summerVacation101(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 10
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/30-1summerVacation1-1.html')
 
@@ -337,7 +337,7 @@ def summerVacation103(request):
 
 def summerVacation104(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 10
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/30-4summerVacation1-4.html')
 
@@ -352,7 +352,7 @@ def sophomoreOp(request):
 
 def sophomoreOp101(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 15
+	User.friendship += 15
 	User.save()
 	return render(request, '1-2/emico/33-1sophomoreOp1-1.html')
 
@@ -419,7 +419,7 @@ def summerVacation2(request):
 
 def summerVacation201(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 10
+	User.friendship += 10
 	User.save()
 	return render(request, '1-2/emico/44-1summerVacation2-1.html')
 
@@ -485,7 +485,7 @@ def volleyballCaptonOp(request):
 
 def captonY(request):
 	User= user.objects.latest('date')
-	User.friendshiip += 10
+	User.friendship += 10
 	User.save()
 	return render(request, '3-4/emico/49-1_captonY.html')
 
