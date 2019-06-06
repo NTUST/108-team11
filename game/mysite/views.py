@@ -1468,12 +1468,21 @@ def eatopl(request):
 	return render(request, '1-2/leo/2eatop.html')
 
 def eatgoodl(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/leo/3-1eatgood.html')
 
 def eatgood2l(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/leo/3-2eatgood2.html')
 
 def eatgood3l(request):
+	User= user.objects.latest('date')
+	User.health += 90
+	User.save()
 	return render(request, '1-2/leo/3-3eatgood3.html')
 
 def eatnol(request):
@@ -1486,6 +1495,9 @@ def classopl(request):
 	return render(request, '1-2/leo/5classop.html')
 
 def classbookl(request):
+	User= user.objects.latest('date')
+	User.education += 50
+	User.save()
 	return render(request, '1-2/leo/6-1classbook.html')
 
 def classvideol(request):
@@ -1501,39 +1513,70 @@ def homeopl(request):
 	return render(request, '1-2/leo/8homeop.html')
 
 def homeop101l(request):
+	User= user.objects.latest('date')
+	User.health += 10
+	User.save()
 	return render(request, '1-2/leo/9-1homeop1-1.html')
 
 def eatgood4l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/9-2-1eatgood4.html')
 
 def eatgood5l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/9-2-2eatgood5.html')
 
 def eatgood6l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/9-2-3eatgood6.html')
 
 def eatgood7l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/9-2-4eatgood7.html')
 
 def eatop2l(request):
 	return render(request, '1-2/leo/9-2eatop2.html')
 
 def homeop103l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/leo/9-3homeop1-3.html')
 
 def homeop104l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/9-4homeop1-4.html')
 
 def clubl(request):
 	return render(request, '1-2/leo/10club.html')
 
 def club1l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/11-1club1.html')
 
 def club2l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/11-2club2.html')
 
 def club3l(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/11-3club3.html')
 
 def loverl(request):
@@ -1558,18 +1601,27 @@ def campl(request):
 	return render(request, '1-2/leo/15camp.html')
 
 def campgol(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/16campgo.html')
 
 def midterml(request):
 	return render(request, '1-2/leo/17midterm.html')
 
 def midtermopl(request):
+	User= user.objects.latest('date')
+	User.education += 20
+	User.save()
 	return render(request, '1-2/leo/18midtermop.html')
 
 def proml(request):
 	return render(request, '1-2/leo/19prom.html')
 
 def promgol(request):
+	User= user.objects.latest('date')
+	User.friendship += 15
+	User.save()
 	return render(request, '1-2/leo/20promgo.html')
 
 def finall(request):
@@ -1579,9 +1631,15 @@ def winterVacation1l(request):
 	return render(request, '1-2/leo/22winterVacation1.html')
 
 def winterVacation101l(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/leo/23-1winterVacation1-1.html')
 
 def winterVacation102l(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/leo/23-2winterVacation1-2.html')
 
 def winterVacationEnd1l(request):
@@ -1591,6 +1649,10 @@ def ktvl(request):
 	return render(request, '1-2/leo/25ktv.html')
 
 def ktvgol(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/leo/26ktvgo.html')
 
 def secondDrop1l(request):
@@ -1603,33 +1665,60 @@ def summerVacation1l(request):
 	return render(request, '1-2/leo/29summerVacation1.html')
 
 def summerVacation101l(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/leo/30-1summerVacation1-1.html')
 
 def summerVacation102l(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/leo/30-2summerVacation1-2.html')
 
 def summerVacation103l(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/leo/30-3summerVacation1-3.html')
 
 def summerVacation104l(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/leo/30-4summerVacation1-4.html')
 
 def rentHousel(request):
+	User= user.objects.latest('date')
+	User.wealth -= 5
+	User.save()
 	return render(request, '1-2/leo/31rentHouse.html')
 
 def sophomoreOpl(request):
 	return render(request, '1-2/leo/32sophomoreOp.html')
 
 def sophomoreOp101l(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/leo/33-1sophomoreOp1-1.html')
 
 def sophomoreOp102l(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/leo/33-2sophomoreOp1-2.html')
 
 def sophomoreOp103l(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/leo/33-3sophomoreOp1-3.html')
 
 def sophomoreOp104l(request):
+	User= user.objects.latest('date')
+	User.education += 5
+	User.save()
 	return render(request, '1-2/leo/33-4sophomoreOp1-4.html')
 
 def lover2l(request):
@@ -1639,6 +1728,9 @@ def loverop2l(request):
 	return render(request, '1-2/leo/35loverop2.html')
 
 def loverokl(request):
+	User= user.objects.latest('date')
+	User.love += 100
+	User.save()
 	return render(request, '1-2/leo/36-1loverok.html')
 
 def loverEndl(request):
@@ -1654,6 +1746,10 @@ def winterVacation2l(request):
 	return render(request, '1-2/leo/39winterVacation2.html')
 
 def winterVacation201l(request):
+	User= user.objects.latest('date')
+	User.family += 60
+	User.wealth += 30
+	User.save()
 	return render(request, '1-2/leo/40-1winterVacation2-1.html')
 
 def winterVacation202l(request):
@@ -1669,15 +1765,28 @@ def summerVacation2l(request):
 	return render(request, '1-2/leo/43summerVacation2.html')
 
 def summerVacation201l(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '1-2/leo/44-1summerVacation2-1.html')
 
 def summerVacation202l(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '1-2/leo/44-2summerVacation2-2.html')
 
 def summerVacation203l(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '1-2/leo/44-3summerVacation2-3.html')
 
 def summerVacation204l(request):
+	User= user.objects.latest('date')
+	User.wealth -= 10
+	User.education += 1
+	User.save()
 	return render(request, '1-2/leo/44-4summerVacation2-4.html')
 
 #leo 3-4
@@ -1707,15 +1816,24 @@ def Francel(request):
 	return render(request, '3-4/leo/47-1-4_France.html')
 
 def exchangeNl(request):
+	User= user.objects.latest('date')
+	User.education += 1
+	User.save()
 	return render(request, '3-4/leo/47-2_exchangeN.html')
 
 def exchangeYl(request):
+	User= user.objects.latest('date')
+	User.wealth -= 20
+	User.save()
 	return render(request, '3-4/leo/48_exchangeY.html')
 
 def volleyballCaptonOpl(request):
 	return render(request, '3-4/leo/49_volleyballCaptonOp.html')
 
 def captonYl(request):
+	User= user.objects.latest('date')
+	User.friendship += 10
+	User.save()
 	return render(request, '3-4/leo/49-1_captonY.html')
 
 def captonNl(request):
@@ -1725,12 +1843,21 @@ def summerVacation3Opl(request):
 	return render(request, '3-4/leo/50_summerVacation3Op.html')
 
 def summerVacation31l(request):
+	User= user.objects.latest('date')
+	User.family += 10
+	User.save()
 	return render(request, '3-4/leo/50-1_summerVacation3.html')
 
 def summerVacation32l(request):
+	User= user.objects.latest('date')
+	User.education += 1
+	User.save()
 	return render(request, '3-4/leo/50-2_summerVacation3.html')
 
 def summerVacation33l(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '3-4/leo/50-3_summerVacation3.html')
 
 def summerVacation34l(request):
@@ -1749,15 +1876,24 @@ def masterOpl(request):
 	return render(request, '3-4/leo/52-2_masterOp.html')
 
 def takeExaml(request):
+	User= user.objects.latest('date')
+	User.education += 12
+	User.save()
 	return render(request, '3-4/leo/53_takeExam.html')
 
 def workl(request):
+	User= user.objects.latest('date')
+	User.wealth += 10
+	User.save()
 	return render(request, '3-4/leo/53_work.html')
 
 def finalExamOpl(request):
 	return render(request, '3-4/leo/54_finalExamOp.html')
 
 def graduationl(request):
+	User= user.objects.latest('date')
+	User.education += 10
+	User.save()
 	return render(request, '3-4/leo/55_graduation.html')
 
 def finishGamel(request):
