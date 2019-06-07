@@ -192,7 +192,7 @@ document.getElementById("comment_family").innerHTML = text;
 //education
 if ({{User.education}} < 50) {
   text = "對課業要再多用點心！";
-} else if({{User.education}} > 80){
+} else if({{User.education}} >= 80){
   text = "學霸是你！？";
 } else{
   text = "表現不錯";
@@ -202,7 +202,7 @@ document.getElementById("comment_education").innerHTML = text;
 //friendship
 if ({{User.friendship}} < 40) {
   text = "多與他人往來，或許有意想不到的收穫";
-} else if({{User.friendship}} > 80){
+} else if({{User.friendship}} >= 80){
   text = "天啊！社交高手";
 } else{
   text = "";
