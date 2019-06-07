@@ -2430,7 +2430,7 @@ def loverlove2l(request):
 	return HttpResponse(html)
 
 def loverlove3l(request):
-	template = get_template('1-2/leoy/14-1-3loverlove3.html')
+	template = get_template('1-2/leo/14-1-3loverlove3.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
