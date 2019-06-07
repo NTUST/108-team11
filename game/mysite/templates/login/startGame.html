@@ -7,7 +7,7 @@
 <title>我的台科物語</title>
 <style> 
 html { 
-  background: url({% static "images/backgroundimage.png" %}) no-repeat center fixed; 
+  background: url({% static 'images/首頁.jpg' %}) no-repeat center fixed; 
   background-size: cover;
 }
 
@@ -39,13 +39,13 @@ html {
 .button1 {
   position: fixed;
   left: 150px;
-  bottom: 12%;
+  top: 80%;
 }
 
 .button2 {
   position: fixed;
   right: 150px;
-  bottom: 12%;
+  top: 80%;
 }
 
 .redbutton {
@@ -86,13 +86,13 @@ body {
 
 </head>
 
-
+<body>
 <iframe style="display:none" src="{% static 'music/page1.mp3' %}" allow="autoplay" id="audio"></iframe>
-
 <a href="gameIntroduction"><button class="bluebutton button1">遊戲說明</button></a>
 <a href="teamIntroduction"><button class="bluebutton button2">創辦團隊</button></a>  
-<a href="selectCharactor"><button class="redbutton startbutton" >進入<br>遊戲</button></a>
-<img src="{% static 'images/title.png' %}">
+<a href="selectCharactor"><button class="redbutton startbutton">進入<br>遊戲</button></a>
+<img src="{% static 'images/細藍字黃底.png' %}" style="position: absolute; top: 10%;">
+<!--<img src="深藍底.png" width="1350" height="350">-->
 </body>
 
 </html>
