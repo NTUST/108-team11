@@ -536,7 +536,7 @@ def loverok(request):
 	return HttpResponse(html)
 
 def loverEnd(request):
-	template = get_template('11-2/emico/36-2loverEnd.html')
+	template = get_template('1-2/emico/36-2loverEnd.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
