@@ -775,7 +775,7 @@ def takeExam(request):
 	User= user.objects.latest('date')
 	User.education += 12
 	User.save()
-	template = get_template('3-4/emico/52-2_masterOp.html')
+	template = get_template('3-4/emico/53_takeExam.html')
 	html = template.render(locals())
 	return HttpResponse(html)
 
@@ -1244,7 +1244,7 @@ def loverokk(request):
 	return HttpResponse(html)
 
 def loverEndk(request):
-	template = get_template('11-2/karen/36-2loverEnd.html')
+	template = get_template('1-2/karen/36-2loverEnd.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -1483,7 +1483,7 @@ def takeExamk(request):
 	User= user.objects.latest('date')
 	User.education += 12
 	User.save()
-	template = get_template('3-4/karen/52-2_masterOp.html')
+	template = get_template('3-4/karen/53_takeExam.html')
 	html = template.render(locals())
 	return HttpResponse(html)
 
@@ -1947,7 +1947,7 @@ def loverokt(request):
 	return HttpResponse(html)
 
 def loverEndt(request):
-	template = get_template('11-2/timmy/36-2loverEnd.html')
+	template = get_template('1-2/timmy/36-2loverEnd.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -2187,7 +2187,7 @@ def takeExamt(request):
 	User= user.objects.latest('date')
 	User.education += 12
 	User.save()
-	template = get_template('3-4/timmy/52-2_masterOp.html')
+	template = get_template('3-4/timmy/53_takeExam.html')
 	html = template.render(locals())
 	return HttpResponse(html)
 
@@ -2649,7 +2649,7 @@ def loverokl(request):
 	return HttpResponse(html)
 
 def loverEndl(request):
-	template = get_template('11-2/leo/36-2loverEnd.html')
+	template = get_template('1-2/leo/36-2loverEnd.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -2888,7 +2888,7 @@ def takeExaml(request):
 	User= user.objects.latest('date')
 	User.education += 12
 	User.save()
-	template = get_template('3-4/leo/52-2_masterOp.html')
+	template = get_template('3-4/leo/53_takeExam.html')
 	html = template.render(locals())
 	return HttpResponse(html)
 
