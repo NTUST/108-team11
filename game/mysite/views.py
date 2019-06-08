@@ -9,6 +9,156 @@ from mysite.models import user
 
 from django.views import generic
 
+def intro1(request):
+	template = get_template('1-2/emico/intro1.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro2(request):
+	template = get_template('1-2/emico/intro2.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro3(request):
+	template = get_template('1-2/emico/intro3.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro4(request):
+	template = get_template('1-2/emico/intro4.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro5(request):
+	template = get_template('1-2/emico/intro5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro6(request):
+	template = get_template('1-2/emico/intro6.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+
+
+def intro1k(request):
+	template = get_template('1-2/karen/intro1.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro2k(request):
+	template = get_template('1-2/karen/intro2.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro3k(request):
+	template = get_template('1-2/karen/intro3.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro4k(request):
+	template = get_template('1-2/karen/intro4.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro5k(request):
+	template = get_template('1-2/karen/intro5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro6k(request):
+	template = get_template('1-2/karen/intro6.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+
+def intro1t(request):
+	template = get_template('1-2/timmy/intro1.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro2t(request):
+	template = get_template('1-2/timmy/intro2.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro3t(request):
+	template = get_template('1-2/timmy/intro3.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro4t(request):
+	template = get_template('1-2/timmy/intro4.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro5t(request):
+	template = get_template('1-2/timmy/intro5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro6t(request):
+	template = get_template('1-2/timmy/intro6.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+
+
+def intro1l(request):
+	template = get_template('1-2/leo/intro1.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro2l(request):
+	template = get_template('1-2/leo/intro2.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro3l(request):
+	template = get_template('1-2/leo/intro3.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro4l(request):
+	template = get_template('1-2/leo/intro4.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro5l(request):
+	template = get_template('1-2/leo/intro5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro6l(request):
+	template = get_template('1-2/leo/intro6.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+
 # login
 
 
