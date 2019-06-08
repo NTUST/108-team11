@@ -9,6 +9,12 @@ from mysite.models import user
 
 from django.views import generic
 
+def escape(request):
+	template = get_template('1-2/emico/escape.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
 def intro1(request):
 	template = get_template('1-2/emico/intro1.html')
 	User= user.objects.latest('date')

@@ -23,6 +23,9 @@ from mysite import views
 import mysite.views
 
 urlpatterns = [
+    #escape
+    url(r'^escape/', views.escape, name="escape"),
+
     #intro 
     url(r'^intro1/', views.intro1, name="intro1"),
     url(r'^intro2/', views.intro2, name="intro2"),
