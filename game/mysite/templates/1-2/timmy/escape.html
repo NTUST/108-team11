@@ -39,7 +39,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(100, 100, "{% static 'images/emico/emico.png' %}", 10, 120, "image");
+    myGamePiece = new component(100, 100, "{% static 'images/timmy/timmy.png' %}", 10, 120, "image");
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
@@ -165,7 +165,7 @@ function accelerate(n) {
     <button class="button" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">飛吧!</button>
     <p><h1>跨過柵欄逃離老師吧!</h1></p>
 </div>
-<img class="next"src="https://img.icons8.com/ios/50/000000/arrow.png" width="100" onclick="location.href='{% url 'draw' %}'";>  
+<img class="next"src="https://img.icons8.com/ios/50/000000/arrow.png" width="100" onclick="location.href='{% url 'drawt' %}'";>  
 <p></p>
 </body>
 </html>

@@ -8,9 +8,48 @@ from django.contrib.auth.decorators import login_required
 from mysite.models import user
 
 from django.views import generic
+def draw(request):
+	template = get_template('1-2/emico/draw.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
 
 def escape(request):
 	template = get_template('1-2/emico/escape.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def drawk(request):
+	template = get_template('1-2/karen/draw.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def escapek(request):
+	template = get_template('1-2/karen/escape.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+def drawt(request):
+	template = get_template('1-2/timmy/draw.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def escapet(request):
+	template = get_template('1-2/timmy/escape.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+def drawl(request):
+	template = get_template('1-2/leo/draw.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def escapel(request):
+	template = get_template('1-2/leo/escape.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -182,7 +221,7 @@ def settings1(request):
 		form = emicoForm(request.POST)
 		if form.is_valid():
 			new_name = form.save()
-			return HttpResponseRedirect('/start/')
+			return HttpResponseRedirect('/intro1/')
 
 	form = emicoForm()
 	return render(request, 'login/settings1.html', {'form': form})
@@ -200,7 +239,7 @@ def settings2(request):
 		form = karenForm(request.POST)
 		if form.is_valid():
 			new_name = form.save()
-			return HttpResponseRedirect('/startk/')
+			return HttpResponseRedirect('/intro1k/')
 
 	form = karenForm()
 	return render(request, 'login/settings2.html', {'form': form})
@@ -218,7 +257,7 @@ def settings3(request):
 		form = timmyForm(request.POST)
 		if form.is_valid():
 			new_name = form.save()
-			return HttpResponseRedirect('/startt/')
+			return HttpResponseRedirect('/intro1t/')
 
 	form = timmyForm()
 	return render(request, 'login/settings3.html', {'form': form})
@@ -236,7 +275,7 @@ def settings4(request):
 		form = leoForm(request.POST)
 		if form.is_valid():
 			new_name = form.save()
-			return HttpResponseRedirect('/startl/')
+			return HttpResponseRedirect('/intro1l/')
 
 	form = leoForm()
 	return render(request, 'login/settings4.html', {'form': form})

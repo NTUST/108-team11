@@ -23,8 +23,15 @@ from mysite import views
 import mysite.views
 
 urlpatterns = [
+    url(r'^draw/', views.draw, name="draw"),
+    url(r'^drawk/', views.drawk, name="drawk"),
+    url(r'^drawt/', views.drawt, name="drawt"),
+    url(r'^drawl/', views.drawl, name="drawl"),
     #escape
     url(r'^escape/', views.escape, name="escape"),
+    url(r'^escapek/', views.escapek, name="escapek"),
+    url(r'^escapet/', views.escapet, name="escapet"),
+    url(r'^escapel/', views.escapel, name="escapel"),
 
     #intro 
     url(r'^intro1/', views.intro1, name="intro1"),
