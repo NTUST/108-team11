@@ -35,6 +35,10 @@ div.name{
   padding: 5px;
   float:left;
 }
+div{
+  font-family: "Microsoft JhengHei", Verdana, Halvetica, Arial;
+}
+
 .dropbtn {
   background-color:  rgba(225,225,225,0.9);
   color: black;
@@ -107,6 +111,7 @@ div.name{
 }
 
 .button{
+  font-family: "Microsoft JhengHei", Verdana, Halvetica, Arial;
   background-color: rgba(225,225,225,0);
   color:black;
   height: 55px;
@@ -119,6 +124,7 @@ div.name{
 }
 
 .button:hover {
+  font-family: "Microsoft JhengHei", Verdana, Halvetica, Arial;
   background-color: #FF7F50;
   color:white;
 }
