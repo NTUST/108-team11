@@ -149,6 +149,9 @@ function updateGameArea() {
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
+    if (myGameArea.frameNo >= 2500){
+        window.location.href = "{% url 'successt' %}";
+    }
 }
 
 function everyinterval(n) {

@@ -14,6 +14,12 @@ def draw(request):
 	html = template.render(locals())
 	return HttpResponse(html)
 
+def success(request):
+	template = get_template('1-2/emico/success.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
 def escape(request):
 	template = get_template('1-2/emico/escape.html')
 	User= user.objects.latest('date')
@@ -22,6 +28,12 @@ def escape(request):
 
 def drawk(request):
 	template = get_template('1-2/karen/draw.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def successk(request):
+	template = get_template('1-2/karen/success.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)
@@ -37,6 +49,12 @@ def drawt(request):
 	html = template.render(locals())
 	return HttpResponse(html)
 
+def successt(request):
+	template = get_template('1-2/timmy/success.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
 def escapet(request):
 	template = get_template('1-2/timmy/escape.html')
 	User= user.objects.latest('date')
@@ -44,6 +62,12 @@ def escapet(request):
 	return HttpResponse(html)
 def drawl(request):
 	template = get_template('1-2/leo/draw.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def successl(request):
+	template = get_template('1-2/leo/success.html')
 	User= user.objects.latest('date')
 	html = template.render(locals())
 	return HttpResponse(html)

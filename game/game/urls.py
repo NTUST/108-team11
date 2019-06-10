@@ -23,6 +23,11 @@ from mysite import views
 import mysite.views
 
 urlpatterns = [
+    url(r'^success/', views.success, name="success"),
+    url(r'^successk/', views.successk, name="successk"),
+    url(r'^successt/', views.successt, name="successt"),
+    url(r'^successl/', views.successl, name="successl"),
+
     url(r'^draw/', views.draw, name="draw"),
     url(r'^drawk/', views.drawk, name="drawk"),
     url(r'^drawt/', views.drawt, name="drawt"),
