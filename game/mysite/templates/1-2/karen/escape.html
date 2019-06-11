@@ -125,6 +125,7 @@ function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
+            window.location.href = "{% url 'drawk' %}";
             return;
         } 
     }
@@ -168,7 +169,6 @@ function accelerate(n) {
     <button class="button" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">飛吧!</button>
     <p><h1>跨過柵欄逃離老師吧!</h1></p>
 </div>
-<img class="next"src="https://img.icons8.com/ios/50/000000/arrow.png" width="100" onclick="location.href='{% url 'drawk' %}'";>  
 <p></p>
 </body>
 </html>
