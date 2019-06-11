@@ -466,7 +466,7 @@ def eatop2(request):
 
 def homeop103(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.wealth -= 5
 	User.save()
 	template = get_template('1-2/emico/9-3homeop1-3.html')
@@ -475,7 +475,7 @@ def homeop103(request):
 
 def homeop104(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/emico/9-4homeop1-4.html')
 	html = template.render(locals())
@@ -489,7 +489,7 @@ def club(request):
 
 def club1(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/emico/11-1club1.html')
 	html = template.render(locals())
@@ -497,7 +497,7 @@ def club1(request):
 
 def club2(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/emico/11-2club2.html')
 	html = template.render(locals())
@@ -505,7 +505,7 @@ def club2(request):
 
 def club3(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/emico/11-3club3.html')
 	html = template.render(locals())
@@ -555,7 +555,7 @@ def camp(request):
 
 def campgo(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/emico/16campgo.html')
 	html = template.render(locals())
@@ -583,7 +583,7 @@ def prom(request):
 
 def promgo(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/emico/20promgo.html')
 	html = template.render(locals())
@@ -1174,7 +1174,7 @@ def eatop2k(request):
 
 def homeop103k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.wealth -= 5
 	User.save()
 	template = get_template('1-2/karen/9-3homeop1-3.html')
@@ -1183,7 +1183,7 @@ def homeop103k(request):
 
 def homeop104k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/karen/9-4homeop1-4.html')
 	html = template.render(locals())
@@ -1197,7 +1197,7 @@ def clubk(request):
 
 def club1k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/karen/11-1club1.html')
 	html = template.render(locals())
@@ -1205,7 +1205,7 @@ def club1k(request):
 
 def club2k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/karen/11-2club2.html')
 	html = template.render(locals())
@@ -1213,7 +1213,7 @@ def club2k(request):
 
 def club3k(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/karen/11-3club3.html')
 	html = template.render(locals())
@@ -1263,7 +1263,7 @@ def campk(request):
 
 def campgok(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/karen/16campgo.html')
 	html = template.render(locals())
@@ -1291,7 +1291,7 @@ def promk(request):
 
 def promgok(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/karen/20promgo.html')
 	html = template.render(locals())
@@ -1877,7 +1877,7 @@ def eatop2t(request):
 
 def homeop103t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.wealth -= 5
 	User.save()
 	template = get_template('1-2/timmy/9-3homeop1-3.html')
@@ -1886,7 +1886,7 @@ def homeop103t(request):
 
 def homeop104t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/timmy/9-4homeop1-4.html')
 	html = template.render(locals())
@@ -1900,7 +1900,7 @@ def clubt(request):
 
 def club1t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/timmy/11-1club1.html')
 	html = template.render(locals())
@@ -1908,7 +1908,7 @@ def club1t(request):
 
 def club2t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/timmy/11-2club2.html')
 	html = template.render(locals())
@@ -1916,7 +1916,7 @@ def club2t(request):
 
 def club3t(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/timmy/11-3club3.html')
 	html = template.render(locals())
@@ -1966,7 +1966,7 @@ def campt(request):
 
 def campgot(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/timmy/16campgo.html')
 	html = template.render(locals())
@@ -1994,7 +1994,7 @@ def promt(request):
 
 def promgot(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/timmy/20promgo.html')
 	html = template.render(locals())
@@ -2579,7 +2579,7 @@ def eatop2l(request):
 
 def homeop103l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.wealth -= 5
 	User.save()
 	template = get_template('1-2/leo/9-3homeop1-3.html')
@@ -2588,7 +2588,7 @@ def homeop103l(request):
 
 def homeop104l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/leo/9-4homeop1-4.html')
 	html = template.render(locals())
@@ -2602,7 +2602,7 @@ def clubl(request):
 
 def club1l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/leo/11-1club1.html')
 	html = template.render(locals())
@@ -2610,7 +2610,7 @@ def club1l(request):
 
 def club2l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/leo/11-2club2.html')
 	html = template.render(locals())
@@ -2618,7 +2618,7 @@ def club2l(request):
 
 def club3l(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/leo/11-3club3.html')
 	html = template.render(locals())
@@ -2668,7 +2668,7 @@ def campl(request):
 
 def campgol(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/leo/16campgo.html')
 	html = template.render(locals())
@@ -2696,7 +2696,7 @@ def proml(request):
 
 def promgol(request):
 	User= user.objects.latest('date')
-	User.friendship += 15
+	User.friendship += 10
 	User.save()
 	template = get_template('1-2/leo/20promgo.html')
 	html = template.render(locals())
