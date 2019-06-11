@@ -198,7 +198,7 @@ if ({{User.education}} < 50) {
 } else if({{User.education}} >= 80){
   text = "學霸是你！？";
 } else{
-  text = "表現不錯";
+  text = "成績還不差";
 }
 document.getElementById("comment_education").innerHTML = text;
 
@@ -208,7 +208,7 @@ if ({{User.friendship}} < 40) {
 } else if({{User.friendship}} >= 80){
   text = "天啊！社交高手";
 } else{
-  text = "";
+  text = "社交生活還不錯";
 }
 document.getElementById("comment_friendship").innerHTML = text;
 
@@ -229,7 +229,7 @@ if ({{User.wealth}} < 50) {
 document.getElementById("comment_wealth").innerHTML = text;
 
 //love for men
-if ({{User.love}} == 100) {
+if ({{User.love}} >= 100) {
   text = "恭喜覓得良緣";
 } else{
   text = "優質單男，請洽09XX-X6X-X2X";
