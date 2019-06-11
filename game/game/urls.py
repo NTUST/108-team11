@@ -23,6 +23,7 @@ from mysite import views
 import mysite.views
 
 urlpatterns = [
+
     url(r'^success/', views.success, name="success"),
     url(r'^successk/', views.successk, name="successk"),
     url(r'^successt/', views.successt, name="successt"),
@@ -42,6 +43,7 @@ urlpatterns = [
     url(r'^intro1/', views.intro1, name="intro1"),
     url(r'^intro2/', views.intro2, name="intro2"),
     url(r'^intro3/', views.intro3, name="intro3"),
+    url(r'^intro305/', views.intro305, name="intro305"),
     url(r'^intro4/', views.intro4, name="intro4"),
     url(r'^intro5/', views.intro5, name="intro5"),
     url(r'^intro6/', views.intro6, name="intro6"),
@@ -49,6 +51,7 @@ urlpatterns = [
     url(r'^intro1k/', views.intro1k, name="intro1k"),
     url(r'^intro2k/', views.intro2k, name="intro2k"),
     url(r'^intro3k/', views.intro3k, name="intro3k"),
+    url(r'^intro305k/', views.intro305k, name="intro305k"),
     url(r'^intro4k/', views.intro4k, name="intro4k"),
     url(r'^intro5k/', views.intro5k, name="intro5k"),
     url(r'^intro6k/', views.intro6k, name="intro6k"),
@@ -56,6 +59,7 @@ urlpatterns = [
     url(r'^intro1t/', views.intro1t, name="intro1t"),
     url(r'^intro2t/', views.intro2t, name="intro2t"),
     url(r'^intro3t/', views.intro3t, name="intro3t"),
+    url(r'^intro305t/', views.intro305t, name="intro305t"),
     url(r'^intro4t/', views.intro4t, name="intro4t"),
     url(r'^intro5t/', views.intro5t, name="intro5t"),
     url(r'^intro6t/', views.intro6t, name="intro6t"),
@@ -63,6 +67,7 @@ urlpatterns = [
     url(r'^intro1l/', views.intro1l, name="intro1l"),
     url(r'^intro2l/', views.intro2l, name="intro2l"),
     url(r'^intro3l/', views.intro3l, name="intro3l"),
+    url(r'^intro305l/', views.intro305l, name="intro305l"),
     url(r'^intro4l/', views.intro4l, name="intro4l"),
     url(r'^intro5l/', views.intro5l, name="intro5l"),
     url(r'^intro6l/', views.intro6l, name="intro6l"),

@@ -6,8 +6,33 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from mysite.models import user
-
 from django.views import generic
+
+def intro305(request):
+	template = get_template('1-2/emico/intro3.5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro305k(request):
+	template = get_template('1-2/karen/intro3.5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro305t(request):
+	template = get_template('1-2/timmy/intro3.5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+def intro305l(request):
+	template = get_template('1-2/leo/intro3.5.html')
+	User= user.objects.latest('date')
+	html = template.render(locals())
+	return HttpResponse(html)
+
+
 def draw(request):
 	template = get_template('1-2/emico/draw.html')
 	User= user.objects.latest('date')
