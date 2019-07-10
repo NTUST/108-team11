@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 100px;
+  text-align: center;
+  height: 700px;
+}
+
+div {
+  position: absolute;
+  bottom: 5%;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#BACK_TO_HOME {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <a href="startGame.html"><img id="BACK_TO_HOME" src="http://www5.ndmctsgh.edu.tw/gh/images/home.png"></a>
+  <h2>請選擇角色</h2>
+</header>
+
+<section>
+  
+  <article>
+    <div>
+	  <a href="settings1.html"><img src="emico_2.png" width="280" height="630"></a>
+    <a href="settings2.html"><img src="karen_1.png" width="300" height="610"></a>
+    <a href="settings3.html"><img src="timmy_new.png" width="335" height="680"></a>
+    <a href="settings4.html"><img src="leo_1.png" width="285" height="640"></a>
+  </div>
+  </article>
+</section>
+
+
+</body>
+</html>
